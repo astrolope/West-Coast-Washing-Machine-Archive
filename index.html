@@ -1,156 +1,301 @@
 <!DOCTYPE html>
 <head>
-    <title>Hats By Serena</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<title>Hats By Serena</title>
+    
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
 <style>
 
-    body {
-		position: relative;
-		background: url('../images/bg.jpg');
-		background-size: cover;
-		color: #999;
-		color: rgba(255,255,255,0.6);
-		font-family: helvetica, sans-serif;
-		font-weight: 300;
-        max-width: 600px;
-        margin: 0 auto;
+
+    
+    html, html a {
+
+text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+    
+header {
+padding: 0;
+    text-align: center;
+}
+ 
+footer {
+    text-align: center;
+}
+    
+body {
+position: relative;
+background: url('../images/bg.jpg');
+background-size: cover;
+color: #999;
+color: rgba(255,255,255,0.6);
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 300;
+max-width: 600px;
+margin: 0 auto;
+    text-align: center;
+color: white;
+    
 }
 
-    div {
-  height: 400px;
-  background-size: cover;
-  position: relative;
-  margin: 40px 0 0 0;
-  border: 10px solid black;
-  border-radius: 20px;
-  align-content: center;
-  max-width: 600px;
+div {
+height: 400px;
+background-size: cover;
+position: relative;
+
+border-radius: 10px;
+align-content: center;
+max-width: 600px;
 }
 
-    h1 {
-  font-family: 'Codystar';
-  text-align: center;
-  font-size: 75px;
-  color: #fff;
-  margin: 60px 0 0 0;
+h1 {
+font-family: 'Codystar';
+text-align: center;
+font-size: 85px;
+color: white;
+margin: 25px 0 0 0;
+text-shadow:  1px 1px 2.5px rgba(0,0,0,0.5);
+padding: 25px;
+    
 }
 
-    h2 {
-  text-align: center;
-  color: #bbbbbb;
-  margin: 0px 0 70px 0;
+h2 {
+text-align: center;
+color: #bbbbbb;
+margin: 0px 0 70px 0;
 font-size: 25px;
    
 }
 
-    p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
-  line-height: 28px;
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 30px;
-  border: 10px rgba(0,0,0,.8);
-  border-radius: 20px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
+p {
+color: rgba(255,255,255,1);
+background: black;
+background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+padding: 10px;
+line-height: 28px;
+text-align: justify;
+position: absolute;
+bottom: 0;
+margin: 0;
+height: 30px;
+transition: height .5s;
+-webkit-transition: height .5s;
+-moz-transition: height .5s;
 }
 
- small {
-  opacity: 0;
+small {
+opacity: 0;
    
 }
 
-
+a {
+color: #fff;
+color: rgba(255,255,255,0.90);
+}
+    
 .show-description p {
-  height: 150px;
+height: 75px;
+-moz-transition: opacity 0.25s ease-in-out;
+-webkit-transition: opacity 0.50s ease-in-out;
+-o-transition: opacity 0.50s ease-in-out;
+-ms-transition: opacity 0.50s ease-in-out;
+transition: opacity 0.50s ease-in-out;
 }
 
 .show-description small {
-  opacity: 1;
+opacity: 1;
+-moz-transition: opacity 0.25s ease-in-out;
+-webkit-transition: opacity 0.50s ease-in-out;
+-o-transition: opacity 0.50s ease-in-out;
+-ms-transition: opacity 0.50s ease-in-out;
+transition: opacity 0.50s ease-in-out;
 }
 
 .first{
-  background-image: url("images/hat1.jpg");
+background-image: url("images/hat1.jpg");
+
 }
+    
 .second{
-  background-image: url("images/hat2.jpg");
+background-image: url("images/hat2.jpg");
 }
+    
 .third{
-  background-image: url("images/hat3.jpg");
+background-image: url("images/hat3.jpg");
 }
+    
 .price {
   float: right;
 }
-<!-- Controls mobile media -->
-    @media (max-width: 500px) {
-  h1 {
-    font-size: 30px;
-    margin-top: 20px;
-    line-height: 40px;
+    
+ul.contact {
+cursor: pointer;
+margin: 10px;
+
+position: justify;
+padding: 0 50px 50px 0;
+    float: right;
+}
+	
+ul.contact li {
+display: inline-block;
+font-size: 1.5em;
+padding: 7px;
+}
+		
+ul.contact li span {
+display: none;
+}
+		
+ul.contact li a
+		{
+opacity: 0.35;
+-moz-transition: opacity 0.25s ease-in-out;
+-webkit-transition: opacity 0.25s ease-in-out;
+-o-transition: opacity 0.25s ease-in-out;
+-ms-transition: opacity 0.25s ease-in-out;
+transition: opacity 0.25s ease-in-out;
+text-decoration: none;
+		}
+		
+ul.contact li a:hover
+			{
+opacity: 1.0;
+			}
+
+    <!-- Unslider -->
+.banner { 
+position: relative; 
+overflow: auto;
+min-height: 100px;
+margin: 0;
+padding: 30px;
+    }
+    
+.banner li { 
+list-style: none;
+        
+    }
+    
+.banner ul li { 
+float: left;
+           
+}
+    
+.banner ul {
+margin: 0;
+padding: 0;
+        }
+    
+    <!-- Controls mobile media -->
+@media (max-width: 500px) {
+h1 {
+font-size: 60px;
+margin-top: 20px;
+line-height: 40px;
   }
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-      font-family: lo
+h2 {
+font-size: 20px;
+margin: 20px 0 30px 0;
+font-family: lo
   }
-  div {
-    margin: 20px 12px 0 12px;
+  
+div {
+margin: 20px 12px 0 12px;
   }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-       
-  }
-  small {
-    font-size: 16px;
+  
+p {
+font-size: 20px;
+line-height: 24px;
+       }
+  
+small {
+font-size: 16px;
   }
 
-  body {
-    background-color: black;
-      background-size: cover;
+body {
+background-color: black;
+background-size: cover;
+    background-image: none;
   }
     
     }
-
+    
 </style>
 </head>
 
 <body>
 <h1>By Serena</h1>
-
-
+<div class="banner">
+<ul>
+<li >
     
-				 <div class="first">
-  <p>welsh onion soko <span class="price">$14</span><br />
-  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+
+<div class="first"> 
+<p>welsh onion soko <span class="price">$14</span><br />
+<small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
 </div>
-                <!--  implement more hats or some sort of cycling device     
-                <div class="second">
-  <p>pastrami boudin tongue <span class="price">$22</span><br />
-  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
-</div>
-                       
-                <div class="third">
-  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
-  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
-</div>
-        -->             
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
-</script>				
+
+</li>
+<li >
+    
 
 
+<div class="second">
+<p>pastrami boudin tongue <span class="price">$22</span><br />
+<small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+
+</li> 
+<li>
+    
+    
+<div class="third">
+<p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
+<small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+</li>
+</ul>
+</div>
+    </br>
+. 
 
 </body>
+<footer>
+</br>
+
+<ul class="contact">
+<li><a href="#" class="fa fa-twitter fa-1x"><span>Twitter</span></a></li>
+<li><a href="#" class="fa fa-facebook fa-1x"><span>Facebook</span></a></li>
+<li><a href="#" class="fa fa-camera-retro fa-1x"><span>Instagram</span></a></li>
+<li><a href="#" class="fa fa-envelope fa-1x"><span>Email</span></a></li>
+</ul>
+<br>
+
+</footer>
+<script>
+$('div').on('click', function() {
+$(this).toggleClass('show-description');
+});
+        
+$(function() {
+$('.banner').unslider();
+});
+
+$('.banner').unslider({
+    speed: 1500,               //  The speed to animate each slide (in milliseconds)
+    delay: 10000,              //  The delay between slide animations (in milliseconds)
+    keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+    dots: true,               //  Display dot navigation
+    fluid: false,            //  Support responsive design. May break non-responsive designs
+});
+</script>
+
+
+
+
