@@ -14,6 +14,13 @@
         html,
         html a {
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+            height: auto;
+            background: url('../images/bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            
         }
         header {
             padding-left: 20px;
@@ -22,16 +29,17 @@
             text-align: center;
             margin: 0;
             align-content: center;
+            
+            max-height: 40px;
+            border-radius: 10px;
+            margin-bottom: 0;
+            margin-top: 0;
         }
         body {
-
-            background: url('../images/bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
             color: #999;
             color: rgba(255, 255, 255, 0.6);
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 300;
+            font-weight: 100;
             max-width: 600px;
             margin: 0 auto;
             text-align: center;
@@ -42,9 +50,10 @@
             height: 400px;
             background-size: cover;
             position: relative;
-            border-radius: 10px;
+            border-radius: 15px;
             align-content: center;
             max-width: 600px;
+           
         }
         h1 {
             font-family: 'Parisienne', cursive;
@@ -52,15 +61,19 @@
             text-align: center;
             font-size: 85px;
             color: solid white;
-            margin: 15px 8px 0 15px;
+            margin: 5px 8px 0 15px;
+            margin-bottom: -28px;
             text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            padding: 10px;
+            margin-top: -10px;
         }
         h2 {
             text-align: center;
-            color: #bbbbbb;
-            margin: 0px 0 70px 0;
-            font-size: 25px;
+            color: white;
+            margin: 0px -10px 20px 25px;
+            font-size: 19px;
+            font-weight: 100;
+            
         }
         p {
             color: rgba(255, 255, 255, 1);
@@ -78,6 +91,8 @@
             transition: height .5s;
             -webkit-transition: height .5s;
             -moz-transition: height .5s;
+            font-weight: 200;
+            font-size: 14px;
         }
         small {
             opacity: 0;
@@ -108,29 +123,41 @@
         }
         .first {
             background-image: url("images/hat1.jpg");
+            border: 1px solid black;
         }
         .second {
             background-image: url("images/hat2.jpg");
+            border: 1px solid black;
         }
         .third {
             background-image: url("images/hat3.jpg");
+            border: 1px solid black;
         }
         .price {
             float: right;
         }
+        .content {
+            width: 800px;
+            align-content: center;
+            height: 100px;
+                }
         ul.contact {
             cursor: pointer;
-            margin-right: 17px;
-            margin-top: -10px;
-            padding: 0;
+            margin-top: -7px;
+            margin-bottom: -23px;
+            padding: 9px;
             text-align: center;
             align-content: center;
-            float: bottom;
+            background-color: rgba(0, 0, 0, 0.9);
+            max-height: 150px;
+            border-radius: 10px;
+            max-width: 600px;
         }
         ul.contact li {
             display: inline-block;
             font-size: 1.5em;
             padding: 7px;
+            max-height: 50px;
         }
         ul.contact li span {
             display: none;
@@ -143,6 +170,7 @@
             -ms-transition: opacity 0.25s ease-in-out;
             transition: opacity 0.25s ease-in-out;
             text-decoration: none;
+            padding: 0;
         }
         ul.contact li a:hover {
             opacity: 1.0;
@@ -150,7 +178,51 @@
         .copyright {
             font-size: 12px;
             text-align: center;
+            padding: 8px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+            position: relative;
+          
         }
+        ul#filter { 
+    float: left; 
+    font-size: 16px; 
+    list-style: none; 
+    margin-left: 0; 
+    width: 100%;
+            
+}
+ul#filter li { 
+    border-right: 1px solid #dedede;
+    float: left;
+    line-height: 16px;
+    margin-right: 10px;
+    padding-right: 10px;
+    align-content: center;
+}
+        ul#filter li:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+ul#filter a { color: #fff; text-decoration: none; }
+        ul#filter li.current a, ul#filter a:hover { text-decoration: underline; }
+ul#filter li.current a { color: #ccc; font-weight: bold; }
+        ul#portfolio { 
+    float: left; 
+    list-style: none; 
+    margin-left: 0; 
+    width: 600px;
+            align-content: center;
+}
+ul#portfolio li { 
+     
+    float: left; 
+    margin: 0 10px 10px 0; 
+    padding: 10px;
+    width: 600px;
+    position: relative;
+    height: 100px;
+}
+        ul#portfolio a { display: block; width: 100%; }
+ul#portfolio a:hover { text-decoration: none; }
+ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; }
         <!-- Unslider --> .banner {
             position: relative;
             overflow: auto;
@@ -202,18 +274,17 @@
 
 <body>
     <h1>By Serena</h1>
+    <h2>Custom Crochet Hats</h2>
     <div class="banner">
         <ul>
             <li>
-
-
                 <div class="first">
                     <p>hat 1
                         <span class="price">$14</span>
                         <br />
                         <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.</small>
                         <a href="#" class="fa fa-facebook fa-1x">
-                            <span>Facebook</span>
+
                         </a>
                     </p>
                 </div>
@@ -236,7 +307,8 @@
                     <p>hat 3
                         <span class="price">$8</span>
                         <br />
-                        <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small>
+                        <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes. View more description.</small>
+
                     </p>
                 </div>
 
@@ -244,8 +316,6 @@
         </ul>
     </div>
     </br>
-</body>
-<footer>
     <ul class="contact">
         <li>
             <a href="#" class="fa fa-arrow-left ">
@@ -279,8 +349,61 @@
                 <span>Next slide</span>
             </a>
         </li>
+        <br>Check out our newest designs above and be sure to like us on Facebook!</br>
     </ul>
+    </br><br>
+<div class="content">
+<ul id="filter">
+    <li class="current"><a href="#">All</a></li>
+    <li><a href="#">Design</a></li>
+    <li><a href="#">Development</a></li>
+    <li><a href="#">CMS</a></li>
+    <li><a href="#">Integration</a></li>
+    <li><a href="#">Information Architecture</a></li>
+</ul>
     <br>
+    <ul id="portfolio">
+    <li class="cms integration">
+        <a href="#"><img src="images/a-list-apart.png" alt="" height="150" width="170" />A List Apart</a>
+    </li>
+    <li class="integration design">
+        <a href="#"><img src="images/apple.png" alt="" height="150" width="150" />Apple</a>
+    </li>
+    <li class="design development">
+        <a href="#"><img src="images/cnn.png" alt="" height="115" width="150" />CNN</a>
+    </li>
+    <li class="cms">
+        <a href="#"><img src="images/digg.png" alt="" height="115" width="150" />Digg</a>
+    </li>
+    <li class="design cms integration">
+        <a href="#"><img src="images/espn.png" alt="" height="115" width="150" />ESPN</a>
+    </li>
+    <li class="design integration">
+        <a href="#"><img src="images/facebook.png" alt="" height="115" width="150" />Facebook</a>
+    </li>
+    <li class="cms information-architecture">
+        <a href="#"><img src="images/google.png" alt="" height="115" width="150" />Google</a>
+    </li>
+    <li class="integration development">
+        <a href="#"><img src="images/netflix.png" alt="" height="115" width="150" />Netflix</a>
+    </li>
+    <li class="information-architecture">
+        <a href="#"><img src="images/nettuts.png" alt="" height="115" width="150" />NETTUTS</a>
+    </li>
+    <li class="design information-architecture cms">
+        <a href="#"><img src="images/twitter.png" alt="" height="115" width="150" />Twitter</a>
+    </li>
+    <li class="development">
+        <a href="#"><img src="images/white-house.png" alt="" height="115" width="150" />White House</a>
+    </li>
+    <li class="cms design">
+        <a href="#"><img src="images/youtube.png" alt="" height="115" width="150" />YouTube</a>
+    </li>
+</ul>
+</div>
+<br>
+</body>
+<footer>
     <div class="copyright">&copy By Serena. 2014</br>Design: Garrett Criss</div>
 </footer>
 <script>
