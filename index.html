@@ -5,6 +5,7 @@
 
     <script src="//code.jquery.com/jquery-latest.min.js"></script>
     <script src="//unslider.com/unslider.min.js"></script>
+    <script src="js/jquery.catslider.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
@@ -52,6 +53,7 @@
             position: relative;
             border-radius: 15px;
             align-content: center;
+            
             max-width: 600px;
            
         }
@@ -137,10 +139,16 @@
             float: right;
         }
         .content {
-            width: 800px;
+            width: 600px;
+            height: auto;
             align-content: center;
-            height: 100px;
+           
+            background-color #000;
                 }
+        
+        ul.content{
+        }
+        
         ul.contact {
             cursor: pointer;
             margin-top: -7px;
@@ -184,45 +192,17 @@
             position: relative;
           
         }
-        ul#filter { 
-    float: left; 
-    font-size: 16px; 
-    list-style: none; 
-    margin-left: 0; 
-    width: 100%;
-            
-}
-ul#filter li { 
-    border-right: 1px solid #dedede;
-    float: left;
-    line-height: 16px;
-    margin-right: 10px;
-    padding-right: 10px;
-    align-content: center;
-}
-        ul#filter li:last-child { border-right: none; margin-right: 0; padding-right: 0; }
-ul#filter a { color: #fff; text-decoration: none; }
-        ul#filter li.current a, ul#filter a:hover { text-decoration: underline; }
-ul#filter li.current a { color: #ccc; font-weight: bold; }
-        ul#portfolio { 
-    float: left; 
-    list-style: none; 
-    margin-left: 0; 
-    width: 600px;
+        
+        ul.products li {
+    width: 200px;
+    display: inline-block;
+            padding: 20px;
             align-content: center;
+            font-weight: 100;
 }
-ul#portfolio li { 
-     
-    float: left; 
-    margin: 0 10px 10px 0; 
-    padding: 10px;
-    width: 600px;
-    position: relative;
-    height: 100px;
-}
-        ul#portfolio a { display: block; width: 100%; }
-ul#portfolio a:hover { text-decoration: none; }
-ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5px; }
+
+        
+      
         <!-- Unslider --> .banner {
             position: relative;
             overflow: auto;
@@ -231,6 +211,8 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
             padding: 30px;
             border: 10px;
             border-radius: 10px solid black;
+            width: 600px;
+            height: 
         }
         .banner li {
             list-style: none;
@@ -242,6 +224,8 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
             margin: 0;
             padding: 0;
         }
+        
+        
         <!-- Controls mobile media -->@media (max-width: 500px) {
             h1 {
                 font-size: 60px;
@@ -352,54 +336,10 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
         <br>Check out our newest designs above and be sure to like us on Facebook!</br>
     </ul>
     </br><br>
+
 <div class="content">
-<ul id="filter">
-    <li class="current"><a href="#">All</a></li>
-    <li><a href="#">Design</a></li>
-    <li><a href="#">Development</a></li>
-    <li><a href="#">CMS</a></li>
-    <li><a href="#">Integration</a></li>
-    <li><a href="#">Information Architecture</a></li>
-</ul>
-    <br>
-    <ul id="portfolio">
-    <li class="cms integration">
-        <a href="#"><img src="images/a-list-apart.png" alt="" height="150" width="170" />A List Apart</a>
-    </li>
-    <li class="integration design">
-        <a href="#"><img src="images/apple.png" alt="" height="150" width="150" />Apple</a>
-    </li>
-    <li class="design development">
-        <a href="#"><img src="images/cnn.png" alt="" height="115" width="150" />CNN</a>
-    </li>
-    <li class="cms">
-        <a href="#"><img src="images/digg.png" alt="" height="115" width="150" />Digg</a>
-    </li>
-    <li class="design cms integration">
-        <a href="#"><img src="images/espn.png" alt="" height="115" width="150" />ESPN</a>
-    </li>
-    <li class="design integration">
-        <a href="#"><img src="images/facebook.png" alt="" height="115" width="150" />Facebook</a>
-    </li>
-    <li class="cms information-architecture">
-        <a href="#"><img src="images/google.png" alt="" height="115" width="150" />Google</a>
-    </li>
-    <li class="integration development">
-        <a href="#"><img src="images/netflix.png" alt="" height="115" width="150" />Netflix</a>
-    </li>
-    <li class="information-architecture">
-        <a href="#"><img src="images/nettuts.png" alt="" height="115" width="150" />NETTUTS</a>
-    </li>
-    <li class="design information-architecture cms">
-        <a href="#"><img src="images/twitter.png" alt="" height="115" width="150" />Twitter</a>
-    </li>
-    <li class="development">
-        <a href="#"><img src="images/white-house.png" alt="" height="115" width="150" />White House</a>
-    </li>
-    <li class="cms design">
-        <a href="#"><img src="images/youtube.png" alt="" height="115" width="150" />YouTube</a>
-    </li>
-</ul>
+  
+    
 </div>
 <br>
 </body>
@@ -422,6 +362,8 @@ ul#portfolio img { border: 1px solid #dedede; display: block; padding-bottom: 5p
         dots: true, //  Display dot navigation
         fluid: false, //  Support responsive design. May break non-responsive designs
     });
+    
+   
 </script>
 
 
