@@ -1,371 +1,76 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-<head>
-    <title>Hats By Serena</title>
+    <title>Cover Template for Bootstrap</title>
 
-    <script src="//code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//unslider.com/unslider.min.js"></script>
-    <script src="js/jquery.catslider.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
 
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
 
-    <style>
-        html,
-        html a {
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-            height: auto;
-            background: url('../images/bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            
-        }
-        header {
-            padding-left: 20px;
-        }
-        footer {
-            text-align: center;
-            margin: 0;
-            align-content: center;
-            
-            max-height: 40px;
-            border-radius: 10px;
-            margin-bottom: 0;
-            margin-top: 0;
-        }
-        body {
-            color: #999;
-            color: rgba(255, 255, 255, 0.6);
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 100;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            color: white;
-            max-height: 100%;
-        }
-        div {
-            height: 400px;
-            background-size: cover;
-            position: relative;
-            border-radius: 15px;
-            align-content: center;
-            
-            max-width: 600px;
-           
-        }
-        h1 {
-            font-family: 'Parisienne', cursive;
-            font-weight: 100;
-            text-align: center;
-            font-size: 85px;
-            color: solid white;
-            margin: 5px 8px 0 15px;
-            margin-bottom: -28px;
-            text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin-top: -10px;
-        }
-        h2 {
-            text-align: center;
-            color: white;
-            margin: 0px -10px 20px 25px;
-            font-size: 19px;
-            font-weight: 100;
-            
-        }
-        p {
-            color: rgba(255, 255, 255, 1);
-            background: black;
-            background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-            background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-            background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-            padding: 10px;
-            line-height: 28px;
-            text-align: justify;
-            position: absolute;
-            bottom: 0;
-            margin: 0;
-            height: 30px;
-            transition: height .5s;
-            -webkit-transition: height .5s;
-            -moz-transition: height .5s;
-            font-weight: 200;
-            font-size: 14px;
-        }
-        small {
-            opacity: 0;
-        }
-        a {
-            color: #fff;
-            color: rgba(255, 255, 255, 0.90);
-        }
-        .show-description a {
-            float: right;
-            text-decoration: none;
-        }
-        .show-description p {
-            height: 75px;
-            -moz-transition: opacity 0.25s ease-in-out;
-            -webkit-transition: opacity 0.50s ease-in-out;
-            -o-transition: opacity 0.50s ease-in-out;
-            -ms-transition: opacity 0.50s ease-in-out;
-            transition: opacity 0.50s ease-in-out;
-        }
-        .show-description small {
-            opacity: 1;
-            -moz-transition: opacity 0.25s ease-in-out;
-            -webkit-transition: opacity 0.50s ease-in-out;
-            -o-transition: opacity 0.50s ease-in-out;
-            -ms-transition: opacity 0.50s ease-in-out;
-            transition: opacity 0.50s ease-in-out;
-        }
-        .first {
-            background-image: url("images/hat1.jpg");
-            border: 1px solid black;
-        }
-        .second {
-            background-image: url("images/hat2.jpg");
-            border: 1px solid black;
-        }
-        .third {
-            background-image: url("images/hat3.jpg");
-            border: 1px solid black;
-        }
-        .price {
-            float: right;
-        }
-        .content {
-            width: 600px;
-            height: auto;
-            align-content: center;
-           
-            background-color #000;
-                }
-        
-        ul.content{
-        }
-        
-        ul.contact {
-            cursor: pointer;
-            margin-top: -7px;
-            margin-bottom: -23px;
-            padding: 9px;
-            text-align: center;
-            align-content: center;
-            background-color: rgba(0, 0, 0, 0.9);
-            max-height: 150px;
-            border-radius: 10px;
-            max-width: 600px;
-        }
-        ul.contact li {
-            display: inline-block;
-            font-size: 1.5em;
-            padding: 7px;
-            max-height: 50px;
-        }
-        ul.contact li span {
-            display: none;
-        }
-        ul.contact li a {
-            opacity: 0.35;
-            -moz-transition: opacity 0.25s ease-in-out;
-            -webkit-transition: opacity 0.25s ease-in-out;
-            -o-transition: opacity 0.25s ease-in-out;
-            -ms-transition: opacity 0.25s ease-in-out;
-            transition: opacity 0.25s ease-in-out;
-            text-decoration: none;
-            padding: 0;
-        }
-        ul.contact li a:hover {
-            opacity: 1.0;
-        }
-        .copyright {
-            font-size: 12px;
-            text-align: center;
-            padding: 8px;
-            margin-bottom: 3px;
-            margin-top: 3px;
-            position: relative;
-          
-        }
-        
-        ul.products li {
-    width: 200px;
-    display: inline-block;
-            padding: 20px;
-            align-content: center;
-            font-weight: 100;
-}
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-        
-      
-        <!-- Unslider --> .banner {
-            position: relative;
-            overflow: auto;
-            min-height: 100px;
-            margin: 0;
-            padding: 30px;
-            border: 10px;
-            border-radius: 10px solid black;
-            width: 600px;
-            height: 
-        }
-        .banner li {
-            list-style: none;
-        }
-        .banner ul li {
-            float: left;
-        }
-        .banner ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        
-        <!-- Controls mobile media -->@media (max-width: 500px) {
-            h1 {
-                font-size: 60px;
-                margin-top: 20px;
-                line-height: 40px;
-            }
-            h2 {
-                font-size: 20px;
-                margin: 20px 0 30px 0;
-                font-family: lo
-            }
-            div {
-                margin: 20px 12px 0 12px;
-            }
-            p {
-                font-size: 20px;
-                line-height: 24px;
-            }
-            small {
-                font-size: 16px;
-            }
-            body {
-                background-color: black;
-                background-size: cover;
-                background-image: none;
-            }
-        }
-    </style>
-</head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-    <h1>By Serena</h1>
-    <h2>Custom Crochet Hats</h2>
-    <div class="banner">
-        <ul>
-            <li>
-                <div class="first">
-                    <p>hat 1
-                        <span class="price">$14</span>
-                        <br />
-                        <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.</small>
-                        <a href="#" class="fa fa-facebook fa-1x">
+  <body>
 
-                        </a>
-                    </p>
-                </div>
+    <div class="site-wrapper">
 
-            </li>
-            <li>
-                <div class="second">
-                    <p>hat 2
-                        <span class="price">$22</span>
-                        <br />
-                        <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small>
-                    </p>
-                </div>
+      <div class="site-wrapper-inner">
 
-            </li>
-            <li>
+        <div class="cover-container">
 
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">By Serena</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="third">
-                    <p>hat 3
-                        <span class="price">$8</span>
-                        <br />
-                        <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes. View more description.</small>
+          <div class="inner cover">
+            <h1 class="cover-heading">Custom Crochet Hats.</h1>
+            <p class="lead">By Serena specializes in creating crochet hats tailored to your favorite vestments and sports teams. Puruse our selection or contact us and order your perfect hat today!</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">View the Hats</a>
+            </p>
+          </div>
 
-                    </p>
-                </div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>&copy; By-Serena. 2014</br> Designed by: <a href="http://getbootstrap.com">Garrett Criss</a></p>
+            </div>
+          </div>
 
-            </li>
-        </ul>
+        </div>
+ß
+      </div>
+
     </div>
-    </br>
-    <ul class="contact">
-        <li>
-            <a href="#" class="fa fa-arrow-left ">
-                <span>
-                    <i class="fa fa-arrow-left"></i>
-                </span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="fa fa-twitter fa-1x">
-                <span>Twitter</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="fa fa-facebook fa-1x">
-                <span>Facebook</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="fa fa-camera-retro fa-1x">
-                <span>Instagram</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="fa fa-envelope fa-1x">
-                <span>Email</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="fa fa-arrow-right ">
-                <span>Next slide</span>
-            </a>
-        </li>
-        <br>Check out our newest designs above and be sure to like us on Facebook!</br>
-    </ul>
-    </br><br>
 
-<div class="content">
-  
-    
-</div>
-<br>
-</body>
-<footer>
-    <div class="copyright">&copy By Serena. 2014</br>Design: Garrett Criss</div>
-</footer>
-<script>
-    $('div').on('click', function() {
-        $(this).toggleClass('show-description');
-    });
-
-    $(function() {
-        $('.banner').unslider();
-    });
-
-    $('.banner').unslider({
-        speed: 1500, //  The speed to animate each slide (in milliseconds)
-        delay: 10000, //  The delay between slide animations (in milliseconds)
-        keys: true, //  Enable keyboard (left, right) arrow shortcuts
-        dots: true, //  Display dot navigation
-        fluid: false, //  Support responsive design. May break non-responsive designs
-    });
-    
-   
-</script>
-
-
-
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  </body>
+</html>
