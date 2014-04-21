@@ -11,11 +11,11 @@
     <title>By-Serena: Crochet Hats - Home</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="../cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -39,21 +39,25 @@
             <div class="inner">
               <h3 class="masthead-brand">By Serena</h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Hats</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li class="active"><a href="index.html">Hats</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
-
+         
           <div class="inner cover">
-            <h1 class="cover-heading">Custom Crochet Hats.</h1>
-            <p class="lead">By Serena specializes in creating crochet hats tailored to your favorite vestments and sports teams. Puruse our selection or contact us and order your perfect hat today!</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">View Hats</a>
-            </p>
+           {% for post in paginator.posts %}
+          <br/>
+          
+      
+          <img class="img-circle" src="../assets/images/thumbnails/thumb1.png" alt="Generic placeholder image">
+          <h2>{{post.title}}</h2>
+          <p>{{ post.content }}</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          {% endfor %}
           </div>
-
+          
           <div class="mastfoot">
             <div class="inner">
               <p>&copy; By-Serena. 2014</br> Designed by: <a href="http://lycrabeats.com">Garrett Criss</a></p>
