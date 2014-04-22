@@ -28,6 +28,11 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: url('assets/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 body {
   color: #fff;
@@ -55,6 +60,7 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 30px;
+  
 }
 
 
@@ -62,8 +68,11 @@ body {
  * Header
  */
 .masthead-brand {
-  margin-top: 10px;
+  margin-top: -23px;
   margin-bottom: 10px;
+  
+  font-family: 'Niconne', cursive;
+  font-size: 72px;
 }
 
 .masthead-nav > li {
@@ -80,6 +89,9 @@ body {
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
+  background-color: rgba(0,0,0,0.14);
+  padding: 10px;
+  border-radius: 10px;
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -90,7 +102,9 @@ body {
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #fff;
-  border-bottom-color: #fff;
+ 
+  border-radius: 10px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
@@ -108,11 +122,18 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  padding: 8px 20px;
+  background-color: rgba(0,0,0,.50);
+  margin: 15px;
+  border-radius: 27px;
+}
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+  background: rgba(0,0,0,.30);
+  
+  
 }
 
 
@@ -122,8 +143,10 @@ body {
 
 .mastfoot {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.80);
+  
 }
+
 
 
 /*
@@ -158,64 +181,4 @@ body {
   .cover-container {
     width: 700px;
   }
-}
-
-/*
-* LYCRA shapes?
-*/
-
-.my-icon {
-    position: relative;
-}
-.my-icon > i {
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    border: 1.3199999999999998em solid #1142AA;
-    border-bottom: none;
-    border-right: none;
-    border-top-left-radius: 1.3199999999999998em;
-    left: 0em;
-    top: 0em;
-}
-.my-icon > i+i {
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    border: 1.3199999999999998em solid #1142AA;
-    border-top: none;
-    border-left: none;
-    border-bottom-right-radius: 1.3199999999999998em;
-    left: 1.68em;
-    top: 1.68em;
-}
-.my-icon > i+i+i {
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    border: 1.3199999999999998em solid #1142AA;
-    border-top: none;
-    border-right: none;
-    border-bottom-left-radius: 1.3199999999999998em;
-    left: 0em;
-    top: 1.68em;
-}
-.my-icon > i+i+i+i {
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    border: 1.3199999999999998em solid #1142AA;
-    border-bottom: none;
-    border-left: none;
-    border-top-right-radius: 1.3199999999999998em;
-    left: 1.68em;
-    top: 0em;
 }
