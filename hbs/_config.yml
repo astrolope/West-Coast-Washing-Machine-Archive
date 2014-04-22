@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 pygments:         true
 
 # Permalinks
@@ -9,14 +9,14 @@ permalink:        pretty
 title:            By-Serena
 tagline:          The Jekyll Butler
 description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+url:              http://astrolope.github.io/hbs
 
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
 
 paginate:         1
-destination:      http://starkravingrad.github.io/hbs/hats
+destination:      /hbs/hats
 
 # Custom vars
 version:          1.0.0
