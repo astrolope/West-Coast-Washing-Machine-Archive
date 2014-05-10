@@ -4,6 +4,8 @@ pygments:         true
 
 # Permalinks
 
+permalinks:       pretty
+
 
 # Setup
 title:            Poole
