@@ -3,7 +3,7 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        /hats/:categories/:year/:month/:day/:title.html
+
 
 # Setup
 title:            Poole
@@ -16,7 +16,7 @@ author:
   url:            https://twitter.com/mdo
 
 paginate:         1
-destination:      hats/index.html
+
 # Custom vars
 version:          1.0.0
 
