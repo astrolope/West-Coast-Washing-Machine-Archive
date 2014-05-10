@@ -9,7 +9,7 @@ pygments:         true
 title:            Poole
 tagline:          The Jekyll Butler
 description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+url:              http://astrolope.github.io
 
 author:
   name:           Mark Otto
