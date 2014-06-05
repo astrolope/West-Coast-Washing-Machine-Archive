@@ -17,6 +17,6 @@ Kozmo's presence in Washington this summer is only growing and these are two nam
 I've added an Events page in the sidebar. If you've never clicked the little hamburger button on the top-left of the page it'd be a good time to do so and explore some of the other pages of the site! We also have our social media links stashed in there so feel free to listen to the WCWM feed on soundcloud as well featuring all this music in one great playlist!
 
 ###Follow these guys for more great music!
-* [Kozmo on Soundcloud](https://soundcloud.com/kozmoradio) ~ [Facebook](www.facebook.com/KozmoRadio)
+* [Kozmo on Soundcloud](https://soundcloud.com/kozmoradio) ~ [Facebook](http://www.facebook.com/KozmoRadio)
 * [Provider on Soundcloud](https://soundcloud.com/providermusic) ~ [Facebook](https://www.facebook.com/provider.duckncovermusic)
 
