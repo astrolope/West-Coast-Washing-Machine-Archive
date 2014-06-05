@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Rinse Cycle"
+---
+<p class="message">A collection of the newest releases we've rinsed for your easy browsing pleasure. Yeah, that's fabric softener. Enjoy.</p>
+
+{% for releases in site.categories %}
+
+    <ul class="related-posts">
+    {% for posts in releases %}
+      {% for post in posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+
+{% endfor %}

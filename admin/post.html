@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>West Coast Washing Machine - Admin Panel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WCWM Administration Panel</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/admin/dashboard.html">Dashboard</a></li>
+            <li><a href="http://westcoastwashingmachine.com">View Site</a></li>
+            <li><a href="/admin/post.html">Post</a></li>
+            <li><a href="http://google.com">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <h4>Statistics</h4>
+          <ul class="nav nav-sidebar">
+            <li><a href="/admin/dashboard.html">Overview</a></li>
+            <li><a href="#">Release Schedule</a></li>
+            <li ><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <h4>Posting</h4>
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="/admin/post.html">Create A Post</a></li>
+            <li><a href="">Create A Page</a></li>
+            <li><a href="">Social Media</a></li>
+
+          </ul>
+          <h4>Links</h4>
+          <ul class="nav nav-sidebar">
+            <li><a href="http://dillinger.io">Online Markup Editor</a></li>
+            <li><a href="http://hootsuite.com">HootSuite</a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Post-Generator <small>beta</small></h1>
+          <div class="alert alert-danger alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Instructions</strong>
+              <p>Jekyll being a static site generator cannot actually use a form to input pages without intense amounts of scripting. This form is a simple web-app designed to help you generate the necessary front-matter and mark-up to make your posts read properly. <br/>
+              To create a post first create a new file in the "_posts" directory titled "2014-05-04-post-title.md" respectively named to the days date and title of the post.<br/>When that's done copy and paste the formatted front-matter created in this form and save the post file you've created.<br> The only markup editor in the nav bar to the left creates a nice interface for seeing how your posts will look once on the site. <br/>Congratulations! You've created a Jekyll post, now close this alert and get posting!</p>
+</div>
+
+
+      <form role="form" id="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="title" id="title" class="form-control" id="exampleInputEmail1" placeholder="Post title wrapped in quotes please!" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Author</label>
+      <select class="form-control" id="author" required >
+  <option>Select one...</option>
+  <option id="cam">Cameron</option>
+  <option id="ped">Peder</option>
+  <option id="gerb">Garrett</option>
+
+   </select>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Category</label>
+      <select class="form-control" id="category" required>
+
+  <option>The Hamper</option>
+  <option id="release">Releases/Rinses</option>
+  <option>Podcasts</option>
+
+   </select>
+  </div>
+  <div class="form-group">
+       <label for="exampleInputEmail1">Content</label>
+  <textarea class="form-control" rows="9" placeholder="###Example Heading  Blog post content goes here. [links](http://whatever.com) " id="content"></textarea> <br/>
+      <div class="alert alert-warning alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Post Formatting Help</strong>
+              <p>###<strong>Headings</strong><br/>
+                  [<strong>Links</strong>](<i>http://yourlinkshere.com</i>)<br/>
+              </p>
+</div>
+
+  </div>
+
+  <button type="button" id="generate" class="btn btn-success" onclick="post(this.value);">Generate</button>
+          <span><hr></span>
+          <div class="form-group">
+             <label for="exampleInputEmail1">File Name..</label> <br/>
+       <label for="exampleInputEmail1"><br/>Your Custom Front-Matter and Post</label>
+  <textarea class="form-control" rows="4" id="front" placeholder="Once generate is pressed copy and paste the output into your post!"></textarea>
+              </div>
+           <div class="alert alert-warning alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Pro-Tip</strong>
+              <p>Paste your custom front matter into the top of a markdown editor like dillinger.io for the easiest editing experience!
+              </p>
+</div>
+
+<script>
+          function post(){
+              //declare variables to use later
+              var headTitle = document.getElementById('title').value
+              var headName
+              var headCategory
+              var headAuthor
+              var postContent = document.getElementById('content').value
+              var postTitle
+              var date
+
+              //this bit of script discerns between the author not scalable and tailored to my needs
+              if(document.getElementById('author').value == document.getElementById('cam').value)
+              {
+                  headAuthor = "cameron_sherman";
+                  headName = "'Cameron Sherman'";
+              } else if(document.getElementById('author').value == document.getElementById('ped').value)
+              {
+                  headAuthor = "peder";
+                  headName = "'Peder'";
+              } else if(document.getElementById('author').value == document.getElementById('gerb').value)
+              {
+                  headAuthor = "garrett_criss";
+                  headName = "'Garrett Criss'";
+              }
+
+              //handle the categories systems now. It'd be great to group tags into this since it'd be so easy... right?
+              if(document.getElementById('category').value == document.getElementById('release').value)
+              {
+                  headCategory = "releases";
+              } else {
+                  headCategory = "";
+              }
+
+              //okay let's do the post content now.
+              document.getElementById('generate').innerHTML = "Loading...";
+              alert("Almost done! Your generated content is below! Paste into your post file and your done!");
+              document.getElementById('generate').innerHTML = "Generated";
+              //takes all the variables and inputs them into one little yaml front matter stack ready for jekyll
+              document.getElementById('front').value = "---\n" + "layout: post\n" + "title: " + headTitle + "\n" + "author: " + headAuthor + "\n" + "name: " + headName + "\n" + "category: " + headCategory + "\n" + "---" + "\n" + postContent;
+
+
+
+              return false;
+          }
+          </script>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../public/css/js/bootstrap.js"></script>
+    <script src=".js/docs.min.js"></script>
+  </body>
+</html>

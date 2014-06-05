@@ -1,111 +1,105 @@
 ---
+layout: default
+title: Home
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+<div class="intro">
+<h2 class="post-title">Welcome!</h2>
+The West Coast Washing Machine is a music blog dedicated to bringing you the freshest tunes. Spun dried, pressed and folded for your listening pleasure.
+ <h2 class="post-title">Featured Mix </h2>
+  <!-- Soundcloud embed code for the featured mix section -->
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150114698&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
 
-    <title>By-Serena: Crochet Hats - Home</title>
+  </div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+<div class="posts">
+  {% for post in paginator.posts %}
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">By Serena</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="hats.html">Hats</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Custom Crochet Hats.</h1>
-            <p class="lead">By Serena specializes in creating crochet hats tailored to your favorite vestments and sports teams. Puruse our selection or contact us and order your perfect hat today!</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">View Hats</a>
-            </p>
-          </div>
-
-          <div class="inner cover">
-            {% for post in paginator.posts %}
-
-           <h1 class="cover-heading">
+  <div class="post">
+    <h2 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
-      </a></h1>
-            {{ post.content }}
-            {% endfor %}
+      </a>
+    </h2>
+    {{ post.content }}
 
-                      <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+    {% assign author = site.data.authors[author] %}
+    <span class="post-date">
+      Written by <a href="{{ author.web }}" target="_blank">{{ post.name }}</a> on {{ post.date | date_to_long_string }}.
+    </span>
+      <c>
+        <div class="mainButton">
+    <span class="comment">
+        {% if paginator.next_page %}
+    <a class="comment" href="/page{{paginator.next_page}}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-arrow-left fa-stack-1x"></i></span>
+        </a>
   {% else %}
-    <span class="pagination-item older">Older</span>
+    <span class="comment"><span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-arrow-left fa-stack-1x"></i></span></span>
   {% endif %}
-  {% if paginator.previous_page %}
+        <a href="{{ post.url }}">
+       <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-comment fa-stack-1x"></i></a>
+        </span>
+        {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
+      <a class="comment" href="/"><span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-arrow-right fa-stack-1x"></i></span></i></a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+      <a class="comment" href="/page{{paginator.previous_page}}"><span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-arrow-right fa-stack-1x "></i></span></a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="comment"><span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x fa-inverse"></i>
+            <i class="fa fa-arrow-right fa-stack-1x"></i></span></span>
   {% endif %}
+    </span></br></c></div>
+   </div>
+  {% endfor %}
+
+
 </div>
 
-            </div>
+<div class="outro">
+  <c><h2 class="post-title">Gallery</h2></c>
+ A collection of images taken directly from our instagram gallery tag your photos as #WCWM to get them featured on the home page!
+  {% assign url = '{{image}}' %}
+<script type="text/javascript">
 
 
+    var feed;
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy; By-Serena. 2014</br> Designed by: <a href="http://lycrabeats.com">Garrett Criss</a></p>
-            </div>
-          </div>
-        
-     
+feed = new Instafeed({
+  clientId: '7653cbf7ee5949489bda8eae8d118f2c',
+  get: 'tagged',
+  tagName: 'lycrabeats',
+  resolution: 'low_resolution',
+  limit: 1,
+  template: '<li id="instafeed"><img src="{{url}}"/></li>',
+      });
+    feed.run();
+</script>
 
-        </div>
+<script>
+  $(function() {
+    $('.banner').unslider();
+});
+  </script>
+ <div class="banner">
+    <ul>
+        <div id="instafeed"></div>
+    </ul>
+</div>
 
-      </div>
 
-    </div>
+</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-  </body>
-</html>
+

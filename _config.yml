@@ -3,19 +3,19 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-
-permalinks:       pretty
-
+permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-description:      Base theme for Jekyll themes by @mdo.
-url:              http://astrolope.github.io
+title:            The West Coast Washing Machine
+tagline:          ''
+description:      'The West Coast Washing Machine</br></br>Rinsing all your dirty laundry so you dont have to.'
+url:              http://westcoastwashingmachine.com
 
-author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
+creator:
+  name:           'Garrett Criss'
+  url:            http://lycrabeats.com
+
+
 
 paginate:         1
 
@@ -23,4 +23,4 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/poole/lanyon

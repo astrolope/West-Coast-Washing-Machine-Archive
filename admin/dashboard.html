@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>West Coast Washing Machine - Admin Panel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WCWM Administration Panel</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/admin/dashboard">Dashboard</a></li>
+            <li><a href="http://westcoastwashingmachine.com">View Site</a></li>
+            <li><a href="/admin/post.html">Post</a></li>
+            <li><a href="http://google.com">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <h4>Statistics</h4>
+          <ul class="nav nav-sidebar">
+
+            <li class="active"><a href="/admin/dashboard.html">Overview</a></li>
+            <li><a href="#">Release Schedule</a></li>
+            <li><a href="/admin/analytics.html">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+            <h4>Posting</h4>
+          <ul class="nav nav-sidebar">
+
+            <li><a href="/admin/post.html">Write A Post</a></li>
+            <li><a href="">Create A Page</a></li>
+            <li><a href="">Social Media</a></li>
+
+          </ul>
+            <h4>Links</h4>
+          <ul class="nav nav-sidebar">
+
+            <li><a href="http://dillinger.io">Online Markup Editor</a></li>
+            <li><a href="http://hootsuite.com">HootSuite</a></a></li>
+
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AkEITxJZi-s_dGk4cUdOOGU4bTNBYUNpQzB5WWtaQ3c&transpose=0&headers=0&merge=COLS&range=P6%3AP8%2CR6%3AR8&gid=69&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":"36"},"animation":{"duration":0},"colors":["#6fa8dc","#e06666","#f6b26b","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"width":200,"is3D":false,"hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"pieHole":0,"booleanRole":"certainty","title":"Visitation by Device","height":200,"legend":"bottom","focusTarget":"series","annotations":{"domain":{}},"tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"PieChart","chartName":"Chart 1"}
+</script>
+              <h4>Devices</h4>
+              <span class="text-muted">Viewing Breakdown</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AkEITxJZi-s_dGk4cUdOOGU4bTNBYUNpQzB5WWtaQ3c&transpose=0&headers=1&merge=COLS&range=C30%3AC50%2CE30%3AE50&gid=69&pub=1","options":{"region":"world","titleTextStyle":{"fontSize":16},"animation":{"duration":0},"colors":["#ea9999","#d9ead3","#109618"],"width":200,"displayMode":"regions","resolution":"countries","hAxis":{"useFormatFromData":true,"title":"Horizontal axis title","minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Chart title","height":200,"legend":"right","focusTarget":"series","annotations":{"domain":{"style":"line"}},"tooltip":{"trigger":"none"}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"GeoChart","chartName":"Chart 3"}
+</script>
+              <h4>By Location</h4>
+              <span class="text-muted">Visitors Arouind the World</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AkEITxJZi-s_dGk4cUdOOGU4bTNBYUNpQzB5WWtaQ3c&transpose=0&headers=1&range=C8%3AJ9&gid=69&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"vAxes":[{"title":null,"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"title":"","booleanRole":"certainty","height":200,"animation":{"duration":500},"legend":"right","width":200,"focusTarget":"series","hAxis":{"useFormatFromData":true,"minValue":null,"viewWindowMode":null,"viewWindow":null,"maxValue":null},"tooltip":{"trigger":"none"},"isStacked":false},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"ColumnChart","chartName":"Chart 4"}
+</script>
+              <h4>Visitors Overview</h4>
+              <span class="text-muted">Unique Visitsors</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+             <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AkEITxJZi-s_dGk4cUdOOGU4bTNBYUNpQzB5WWtaQ3c&transpose=0&headers=1&range=P30%3AQ38&gid=69&pub=1","options":{"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"animation":{"duration":500},"colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"width":200,"is3D":false,"hAxis":{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},"vAxes":[{"useFormatFromData":true,"title":null,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindow":{"min":null,"max":null},"maxValue":null}],"pieHole":0,"title":"","booleanRole":"certainty","height":200,"legend":"bottom","tooltip":{}},"state":{},"view":{},"isDefaultVisualization":false,"chartType":"PieChart","chartName":"Chart 5"}
+</script>
+              <h4>Top Referrals</h4>
+              <span class="text-muted">From Other Sites</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Release Schedule</h2>
+          <div class="table-responsive">
+           <iframe src="https://docs.google.com/spreadsheets/d/1PzTDs4uO9QlBXqBdBOaKvf1HbDTFsAve63qO7ORGSxs/pubhtml?widget=true&amp;headers=false" width="750" height="400"></iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../public/css/js/bootstrap.js"></script>
+    <script src=".js/docs.min.js"></script>
+  </body>
+</html>
