@@ -7,7 +7,7 @@ image: "../public/images/2NUTS_promo_handbill.jpg"
 
 ---
 <div class="message">
-<img src="http://westcoastwashingmachine.com/public/images/2NUTS_promo_handbill.jpg" width="625">
+<img class="pure-img" src="http://westcoastwashingmachine.com/public/images/2NUTS_promo_handbill.jpg" width="625">
 </div>
 This awesome hand bill designed by Dax Anderson is a flier worth a blog post of it's own.
 
