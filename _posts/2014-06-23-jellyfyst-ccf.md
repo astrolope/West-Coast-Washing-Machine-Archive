@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Jellyfyst @ CCF 2014
+title: "Jellyfyst @ CCF 2014"
 author: garrett_criss
-name: 'Garrett Criss'
+name: "Garrett Criss"
 category: featuredmix
 ---
 Jellyfyst's early morning set at Conscious Culture Festival 2014!
