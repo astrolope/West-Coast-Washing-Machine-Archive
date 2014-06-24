@@ -69,7 +69,13 @@ The West Coast Washing Machine is a music blog dedicated to bringing you the fre
 <div class="intro">
  <h2 class="post-title">Featured Mix </h2>
   <!-- Soundcloud embed code for the featured mix section -->
-   <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/154674799&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+              {% for post in site.categories.featuredmix limit:1 %}
+                <h5>{{ post.title }}</h5>
+              {{ post.content }}
+              <a href="{{ post.url }}">
+               Read more...
+              </a>
+              {% endfor %}
 
   </div>
 

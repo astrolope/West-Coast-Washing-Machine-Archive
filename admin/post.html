@@ -109,6 +109,7 @@
   <option>The Hamper</option>
   <option id="release">Releases/Rinses</option>
   <option>Podcasts</option>
+  <option id="mix">Featured Mix</option>
 
    </select>
   </div>
@@ -169,8 +170,8 @@
               if(document.getElementById('category').value == document.getElementById('release').value)
               {
                   headCategory = "releases";
-              } else {
-                  headCategory = "";
+              } else if(document.getElementById('category').value == document.getElementById('mix').value) {
+                  headCategory = "featuredmix";
               }
 
               //okay let's do the post content now.
