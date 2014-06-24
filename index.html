@@ -65,11 +65,11 @@ The West Coast Washing Machine is a music blog dedicated to bringing you the fre
 
 
 </div>
-
+ {% for post in site.categories.featuredmix limit:1 %}
 <div class="intro">
  <h2 class="post-title">Featured Mix - {{ post.title }} </h2>
   <!-- Soundcloud embed code for the featured mix section -->
-              {% for post in site.categories.featuredmix limit:1 %}
+
 
               {{ post.content }}
               <a href="{{ post.url }}">
