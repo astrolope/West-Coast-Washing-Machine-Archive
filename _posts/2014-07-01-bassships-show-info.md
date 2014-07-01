@@ -13,7 +13,7 @@ As we near closer and closer to the dates for Cloud-D and Resonant Languages Bas
 In conjunction with Axis Events we're bringing our first stop to Bellingham for a one-off night of next-level glitch. With local DJ gone west-coast household name Humpfree Lowgart if you're feeling neglected on the squish this will surely satisfy your needs. [LEVELED: Bass Ships & Snare Planes on Facebook](https://www.facebook.com/events/1423175294633025/1437222609894960/?comment_id=1437227009894520&notif_t=event_mall_reply)
 
 ###7/11/14 - Spokane, WA - The Red Room
-With some huge support from Danktronics and Headyworks Productions we're taking this caravan into eastern Washington for some serious glitch outed fun in Spokane. [BRICKSQUASH in Spokane Facebook Event page](https://www.facebook.com/events/1570979953128875/)
+With some huge support from Danktronics and Headyworks Productions we're taking this caravan into eastern Washington for some serious glitch outed fun in Spokane. [BRICKSQUASH in Spokane Facebook Event page](https://www.facebook.com/events/691389954231330/)
 
 ###7/12/14 - Cosmic Campout III - Leavenworth
 No need for a write-up this annual campout is awesome <3
