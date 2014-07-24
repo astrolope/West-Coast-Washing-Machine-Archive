@@ -3,6 +3,7 @@ layout: post
 title: "Bass Ships and Snare Planes Pre-Event Info"
 author: garrett_criss
 name: 'Garrett Criss'
+category: events
 
 ---
 ### #BRICKSQUASHMONOPOLY Dates and Info
