@@ -1,31 +1,255 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rinsing all your dirty laundry so you don't have too.">
 
-  {% include head.html %}
+    <title>Home &ndash; West Coast Washing Machine</title>
 
-  <body class="sidebar-overlay theme-base-0c">
 
-    {% include sidebar.html %}
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
+
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="http://westcoastwashingmachine.com/js/bootstrap.js"></script>
+
+
+
+<!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+
+<![endif]-->
+<!--[if gt IE 8]><!-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+<!--<![endif]-->
+
+
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://westcoastwashingmachine.com/css/layouts/blog.css">
+        <link rel="stylesheet" href="http://westcoastwashingmachine.com/css/layouts/bootstrap.min.css">
+    <!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <hgroup>
+              <a href="http://westcoastwashingmachine.com"> <img class="pure-img-responsive" src="http://westcoastwashingmachine.com/img/logo1.png" alt="West Coast Washing Machine!"></img></a>
+
+            </hgroup>
+
+<div class="pure-menu pure-menu-horizontal pure-menu-open ">
+                    <ul class="sidebar-item contact">
+      <li>
+            <a href="https://soundcloud.com/wcwm" class="fa fa-soundcloud fa-1x">
+                <span>Soundcloud</span>
+            </a>
+      </li>
+      <li>
+            <a href="http://westcoastwashingmachine.bandcamp.com" class="fa fa-music fa-1x">
+                <span>Bandcamp</span>
+            </a>
+      </li>
+      <li>
+            <a href="https://twitter.com/WC_WM" class="fa fa-twitter fa-1x">
+                <span>Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://facebook.com/westcoastwashingmachine" class="fa fa-facebook fa-1x">
+                <span>Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com/westcoastwashingmachine" class="fa fa-camera-retro fa-1x">
+                <span>Instagram</span>
+            </a>
+        </li>
+                </div>
+
         </div>
-      </div>
-
-      <div class="container content">
-
-        {{ content }}
-      </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">Posts</a></li>
+  <li ><a href="#mix" role="tab" data-toggle="tab">Mixes</a></li>
+  <li><a href="#Recent" role="tab" data-toggle="tab">Recent</a></li>
+  <li><a href="#settings" role="tab" data-toggle="tab">Contact</a></li>
+  <li><a href="#events" role="tab" data-toggle="tab">Events</a></li>
+  <li><a href="#artists" role="tab" data-toggle="tab">Artists</a></li>
+</ul>
 
-  </body>
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">
+
+      {% for post in paginator.posts %}
+                <div class="posts">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="{{ post.name }}&#x27;s avatar" height="48" width="48" src="http://westcoastwashingmachine.com/img/common/{{ post.author }}-avatar.png">
+
+                        <h2 class="post-title">{{ post.title }}</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">{{ post.name }}</a> under <a class="post-category post-category-{{ post.category }}" href="#">{{ post.category }}</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                          {{ post.content }}
+                        </p>
+                       <a href="{{ post.url }}">Read more...</a> <br>
+                        {% endfor %}
+
+                        <div class="pagination">
+                            <ul class="pager">
+                        {% if paginator.previous_page %}
+                           <li class="previous">  <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Older</a>
+                        {% else %}
+                            <span class="previous"> <li class="previous disabled"><a href="#">&larr; Older</a></li></span>
+                            {% endif %}
+                            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                            {% if paginator.next_page %}
+                             <li class="next"><a href="/page{{ paginator.next_page }}" class="next">Newer &rarr;</a></li>
+                            {% else %}
+                            <span class="next ">Next</span>
+                        {% endif %}
+                                </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+  </div>
+  <div class="tab-pane fade" id="mix">
+      {% for post in site.categories.featuredmix limit:1 %}
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="{{ post.name }}&#x27;s avatar" height="48" width="48" src="img/common/{{ post.author }}-avatar.png">
+
+                        <h2 class="post-title">{{ post.title }}</h2>
+
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">{{ post.name }}</a> under <a class="post-category post-category-{{ post.category }}" href="#">{{ post.category }}</a>
+                        </p>
+                    </header>
+                    <br>
+
+                    <div class="post-description">
+                        <p>
+                          {{ post.excerpt }}
+                        </p>
+                      <a href="{{ post.url }}">Read more...</a>
+                    </div>
+                </section>
+              {% endfor %}
+  </div>
+  <div class="tab-pane fade" id="Recent">
+      <br>
+      <ul>
+          {% for post in site.posts limit:7 %}
+          <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+
+      </ul>
+
+
+  </div>
+  <div class="tab-pane fade" id="settings">
+      <br>
+      The west coast washing machine is the brain child of Cameron Sherman and Garrett Criss brainstorming of a better way to sift through the newest releases on Sound Cloud. Eventually it stemmed into a music blog platform to encompass all facets of this art we all love so much. Check back for an updated contact form and more! To submit a song for Rinsing or ask us a question.
+
+submissions@westcoastwashingmachine.com bookings@westcoastwashingmachine.com jellyfyst@westcoastwashingmachine.com
+
+Thanks for reading!
+  </div>
+<div class="tab-pane fade" id="events">
+    <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin"><script>!function(c,b,a){function d(h){var e=document.getElementById("upto-calendar-container-"+c),f=document.createElement("SCRIPT"),g="http://upto.com/js/embed.js";f.onreadystatechange=function(){if(f.readyState==="loaded"||f.readyState==="complete"){f.onreadystatechange=null;h()}};f.onload=function(){h()};f.setAttribute("src",g);e.parentNode.insertBefore(f,e)}d(function(){upto.init(c,b,a)})}("VJMOKO",["l9YO"],{"template":"1"});</script></div>
+</div>
+<div class="tab-pane fade" id="artists">
+    <br>
+    <ul>
+                     {% for artists in site.data.artists %}
+                     <li>
+                        <a href="https://soundcloud.com/{{ artists.soundcloud }}">
+                         {{ artists.alias }}
+                        </a>
+                     </li>
+                     {% endfor %}
+                  </ul>
+</div>
+
+            </div>
+
+
+
+
+
+
+            <div class="footer">
+             <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://purecss.io/">About</a></li>
+                        <li><a href="http://github.com/yui/pure/">Sitemap</a></li>
+                        <li><a href="http://github.com/yui/pure/">RSS</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
 </html>

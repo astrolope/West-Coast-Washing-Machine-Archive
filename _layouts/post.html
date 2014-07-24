@@ -1,41 +1,149 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rinsing all your dirty laundry so you don't have too.">
 
-<div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
-<!-- Look the author details up from the site config. -->
-{% assign author = site.data.authors[page.author] %}
+    <title>{{ page.title }} &ndash; West Coast Washing Machine</title>
 
 
 
-  {{ content }}
 
-{% if author %}
-    <span class="post-date">
-        <!-- Personal Info. -->
-        Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a> on {{ page.date | date_to_string }}.
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="/js/bootstrap.js"></script>
 
-    </span>
-{% endif %}
-    <span class="comment">
-    <ul class="comment">
-    <li>
-        <a href="{{ post.url }}"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x fa-inverse"></i><i class="fa fa-comment fa-stack-1x"></i></a></span>
-    </li>
-        <li>
-    <a href="/index.html">
-    <span class="fa-stack fa-lg">
-    <i class=" fa fa-square fa-stack-2x fa-inverse"></i>
-    <i class="fa fa-home fa-stack-1x"></i>
-    </span>
-    </a>
+
+
+<!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+
+<![endif]-->
+<!--[if gt IE 8]><!-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+
+<!--<![endif]-->
+
+
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://westcoastwashingmachine.com/css/layouts/blog.css">
+        <link rel="stylesheet" href="http://westcoastwashingmachine.com/css/layouts/bootstrap.min.css">
+    <!--<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <hgroup>
+             <a href="http://westcoastwashingmachine.com">  <img class="pure-img-responsive" src="http://westcoastwashingmachine.com/img/logo1.png" alt="West Coast Washing Machine!"></img> </a>
+
+            </hgroup>
+
+<div class="pure-menu pure-menu-horizontal pure-menu-open ">
+                    <ul class="sidebar-item contact">
+      <li>
+            <a href="https://soundcloud.com/wcwm" class="fa fa-soundcloud fa-1x">
+                <span>Soundcloud</span>
+            </a>
+      </li>
+      <li>
+            <a href="http://westcoastwashingmachine.bandcamp.com" class="fa fa-music fa-1x">
+                <span>Bandcamp</span>
+            </a>
+      </li>
+      <li>
+            <a href="https://twitter.com/WC_WM" class="fa fa-twitter fa-1x">
+                <span>Twitter</span>
+            </a>
         </li>
+        <li>
+            <a href="https://facebook.com/westcoastwashingmachine" class="fa fa-facebook fa-1x">
+                <span>Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com/westcoastwashingmachine" class="fa fa-camera-retro fa-1x">
+                <span>Instagram</span>
+            </a>
+        </li>
+                </div>
 
-    </ul>
-      <h2 class="post-title">Comments</h2>
-    </span>
-    <div id="disqus_thread"></div>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+  <li ><a href="#mix" role="tab" data-toggle="tab">Comments</a></li>
+  <li><a href="#Recent" role="tab" data-toggle="tab">Related</a></li>
+  <li><a href="#settings" role="tab" data-toggle="tab">Contact</a></li>
+  <li><a href="#events" role="tab" data-toggle="tab">Events</a></li>
+  <li><a href="#artists" role="tab" data-toggle="tab">Artists</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">
+
+                <div class="posts">
+                    <header class="post-header">
+                        <img class="post-avatar" alt="{{ page.name }}&#x27;s avatar" height="48" width="48" src="http://westcoastwashingmachine.com/img/common/{{ page.author }}-avatar.png">
+
+                        <h2 class="post-title">{{ page.title }}</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">{{ page.name }}</a> under <a class="post-category post-category-{{ page.category }}" href="#">{{ page.category }}</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                          {{ content }}
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+  </div>
+  <div class="tab-pane fade" id="mix">
+
+                <!-- A single blog post -->
+                <section class="post">
+                     <div id="disqus_thread"></div>
 
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -49,18 +157,80 @@ layout: default
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <!-- AddThis Button BEGIN -->
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"><i class="fa fa-twitter"></i></a>
-<a class="addthis_button_preferred_2"><i class="fa fa-facebook"></i></a>
-<a class="addthis_button_preferred_3"><i class="fa fa-file"></i></a>
-<a class="addthis_button_preferred_4"><i class="fa fa-envelope"></i></a>
-<a class="addthis_button_compact"><i class="fa fa-plus"></i></a>
-<a class="addthis_counter addthis_bubble_style"></a>
+
+
+
+                </section>
+
+  </div>
+  <div class="tab-pane fade" id="Recent">
+      <br>
+      <ul>
+          {% for post in site.posts limit:7 %}
+          <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+
+      </ul>
+
+
+  </div>
+  <div class="tab-pane fade" id="settings">
+      <br>
+      The west coast washing machine is the brain child of Cameron Sherman and Garrett Criss brainstorming of a better way to sift through the newest releases on Sound Cloud. Eventually it stemmed into a music blog platform to encompass all facets of this art we all love so much. Check back for an updated contact form and more! To submit a song for Rinsing or ask us a question.
+
+submissions@westcoastwashingmachine.com bookings@westcoastwashingmachine.com jellyfyst@westcoastwashingmachine.com
+
+Thanks for reading!
+  </div>
+<div class="tab-pane fade" id="events">
+    <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin"><script>!function(c,b,a){function d(h){var e=document.getElementById("upto-calendar-container-"+c),f=document.createElement("SCRIPT"),g="http://upto.com/js/embed.js";f.onreadystatechange=function(){if(f.readyState==="loaded"||f.readyState==="complete"){f.onreadystatechange=null;h()}};f.onload=function(){h()};f.setAttribute("src",g);e.parentNode.insertBefore(f,e)}d(function(){upto.init(c,b,a)})}("VJMOKO",["l9YO"],{"template":"1"});</script></div>
 </div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-534b0bce11e8d9dd"></script>
-<!-- AddThis Button END -->
+<div class="tab-pane fade" id="artists">
+    <br>
+    <ul>
+                     {% for artists in site.data.artists %}
+                     <li>
+                        <a href="https://soundcloud.com/{{ artists.soundcloud }}">
+                         {{ artists.alias }}
+                        </a>
+                     </li>
+                     {% endfor %}
+                  </ul>
+</div>
+
+            </div>
 
 
+
+
+
+
+            <div class="footer">
+             <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://purecss.io/">About</a></li>
+                        <li><a href="http://github.com/yui/pure/">Sitemap</a></li>
+                        <li><a href="http://github.com/yui/pure/">RSS</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+                  </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
