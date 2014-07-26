@@ -13,7 +13,6 @@ Cloud-D's original style and fantastic low end takes you on a Bass Ship ride fil
 
 This 9-track Album is must hear album for bass music lovers everywhere. Follow [Cloud-D on facebook](https://www.facebook.com/clouddbass) to stay up to date on upcoming shows and future releases. Make sure to see Cloud-D Live this summer/fall its a "WCWM Must See Act of 2014"
 
-<iframe width="80%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/43852849&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
 Thank you come again,
 Jellyfyst @ WCWM
