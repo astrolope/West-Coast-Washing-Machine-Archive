@@ -20,7 +20,7 @@ This track titled "Whateverville" is a great psy-jazz inspired "chillier" style 
 * Wenatchee, WA
 * Spokane, WA - Redroom Lounge
 
-<img class="pure-img" src="http://westcoastwashingmachine.com/img/leftcoastin.jpg></img>
+<img class="pure-img" src="http://westcoastwashingmachine.com/img/leftcoastin.jpg"></img>
 
 We'll be in Portland on the 13th and 14th of September and would love to make something happen while we're in town. After that we'll most likely be cruising south through california. Likely making stops in Tahoe, Santa Cruz, Big Sur and wherever else tickles our fancy. If you would like us to come to your city please email this address @
 
