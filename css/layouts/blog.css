@@ -76,12 +76,12 @@ ul.contact
     align-content: center;
     display: inline-block;
     background-color: #fff;
-    padding-right: 20px;
+
 
 }
 ul.contact li
 {
-    display: block;
+    display: inline-block;
     font-size: 1.75em;
     padding: 6px;
     background-color: #fff;
