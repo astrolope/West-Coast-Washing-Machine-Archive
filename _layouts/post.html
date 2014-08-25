@@ -108,7 +108,7 @@
   <li ><a href="#mix" role="tab" data-toggle="tab">Comments</a></li>
   <li><a href="#Recent" role="tab" data-toggle="tab">Related</a></li>
   <li><a href="#settings" role="tab" data-toggle="tab">Contact</a></li>
-  <li><a href="#events" role="tab" data-toggle="tab">Events</a></li>
+  <li><a href="#events" role="tab" data-toggle="tab">Categories</a></li>
   <li><a href="#artists" role="tab" data-toggle="tab">Artists</a></li>
 </ul>
 
@@ -166,7 +166,7 @@
   <div class="tab-pane fade" id="Recent">
       <br>
       <ul>
-          {% for post in site.posts limit:7 %}
+          {% for post in site.posts limit:10 %}
           <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
           </li>
@@ -185,7 +185,26 @@ submissions@westcoastwashingmachine.com bookings@westcoastwashingmachine.com jel
 Thanks for reading!
   </div>
 <div class="tab-pane fade" id="events">
-    <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin"><script>!function(c,b,a){function d(h){var e=document.getElementById("upto-calendar-container-"+c),f=document.createElement("SCRIPT"),g="http://upto.com/js/embed.js";f.onreadystatechange=function(){if(f.readyState==="loaded"||f.readyState==="complete"){f.onreadystatechange=null;h()}};f.onload=function(){h()};f.setAttribute("src",g);e.parentNode.insertBefore(f,e)}d(function(){upto.init(c,b,a)})}("VJMOKO",["l9YO"],{"template":"1"});</script></div>
+<h3>Releases</h3>
+  <ul>
+          {% for post in site.categories.releases limit:5 %}
+          <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+
+      </ul>
+
+  <h3>Events</h3>
+  <ul>
+          {% for post in site.categories.events limit:5 %}
+          <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+
+      </ul>
+</div>
 </div>
 <div class="tab-pane fade" id="artists">
     <br>
