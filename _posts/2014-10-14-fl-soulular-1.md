@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Fresh Laundry: Soulular's EvoLuminate"
+author: garrett_criss
+name: 'Garrett Criss'
+category: releases
+---
+
 ### Soulular releases EvoLuminate on Bandcamp!
 
 Donning my cup of coffee and subpac I nestled in for Jeff's latest refinement in low-end expeditions. After hearing the "Livity" teaser on Soundcloud the other day I was quite excited to give the rest of these tracks a play-through. 
