@@ -97,6 +97,16 @@
         </li>
                         </ul>
 </div>
+      
+      <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- two -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-4447882137135400"
+     data-ad-slot="6600044379"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
 
         </div>
     </div>
@@ -231,11 +241,15 @@ Thanks for reading!
     <br>
     <ul>
                      {% for artists in site.data.artists %}
-                     <li>
+      <div class="pure-u-1 pure-u-lg-1-3">
+              <h3>{{ artists.alias }}</h3>
+        <p>{{ artists.bio }}</p>
+                     
                         <a href="https://soundcloud.com/{{ artists.soundcloud }}">
                          {{ artists.alias }}
                         </a>
-                     </li>
+                     
+        </div>
                      {% endfor %}
                   </ul>
 </div>
