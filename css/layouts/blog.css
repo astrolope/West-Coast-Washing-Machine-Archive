@@ -15,8 +15,12 @@ a:focus {
 
 h3 {
     font-weight: 100;
+    font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif; 
+}
 /* LAYOUT CSS */
 
 .right {
