@@ -148,7 +148,7 @@
                   <p>
                     {{ post.content }}
                   </p>
-                  <a href="{{ post.url }}">Read more...</a>
+                  
                  {% endfor %}
 
                   <div class="pagination">
@@ -156,9 +156,7 @@
                       {% if paginator.previous_page %}
                       <li class="previous">
                         <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Newer</a>
-                         <li class="next">
-                           <a href="{{ post.url }}">Read more...</a>
-                        </li>
+                       
                         {% else %}
                         <span class="previous">
                           <li class="previous disabled">
