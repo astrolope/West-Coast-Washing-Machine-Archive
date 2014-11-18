@@ -156,15 +156,16 @@
                       {% if paginator.previous_page %}
                       <li class="previous">
                         <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Newer</a>
+                         <li class="next">
+                           <a href="{{ post.url }}">Read more...</a>
+                        </li>
                         {% else %}
                         <span class="previous">
                           <li class="previous disabled">
                             <a href="#">&larr; Newer</a>
                           </li>
                         </span>
-                         <li class="next">
-                           <a href="{{ post.url }}">Read more...</a>
-                        </li>
+                        
                         {% endif %} {% if paginator.next_page %}
                         <li class="next">
                           <a href="/page{{ paginator.next_page }}" class="next">Older &rarr;</a>
