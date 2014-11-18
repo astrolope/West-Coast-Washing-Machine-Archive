@@ -220,11 +220,11 @@ ul.contact li a:hover
 }
 
 .footer {
-    text-align: center;
+   
     padding: 1em 0;
 }
 .footer a {
-    color: #ccc;
+    color: #aaa;
     font-size: 80%;
 }
 .footer .pure-menu a:hover,
