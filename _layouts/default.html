@@ -149,7 +149,7 @@
                     {{ post.content }}
                   </p>
                   <a href="{{ post.url }}">Read more...</a>
-                  <br>{% endfor %}
+                 {% endfor %}
 
                   <div class="pagination">
                     <ul class="pager">
@@ -173,6 +173,11 @@
                         {% else %}
                         <span class="next ">Older</span>
                         {% endif %}
+                      {% for post in paginator.posts %}
+                        <li class="next">
+                           <a href="{{ post.url }}">Read more...</a>
+                        </li>
+                      {% endfor %}
                     </ul>
                   </div>
                 </div>
