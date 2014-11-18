@@ -240,23 +240,7 @@
 
             </div>
             
-            <div class="tab-pane fade" id="settings">
-              <br>The West Coast Washing Machine is the brain child of Cameron Sherman and Garrett Criss brainstorming of a better way to sift through the newest releases on Sound Cloud.
-              <br>Eventually it stemmed into a music blog platform to encompass all facets of this art we all love so much.
-              <br>
-              <br>Check back for an updated contact form and more!
-              <br>
-              <br>To submit a song for rinsing or ask us a question.
-              <br>
-              <br>submissions@westcoastwashingmachine.com
-
-              <br>blapsta@westcoastwashingmachine.com
-              <br>bookings@westcoastwashingmachine.com
-              <br>jellyfyst@westcoastwashingmachine.com
-              <br>
-              <br>Thanks for reading!
-            </div>
-            
+          
             <div class="tab-pane fade" id="events">
               <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin">
                 <script>
@@ -289,7 +273,8 @@
 
             <div class="tab-pane fade" id="artists">
               <br>{% for artists in site.data.artists %}
-              <div class="pure-u-1-2">
+              <div class="pure-u-1-2 pure-u-lg-1-2">
+                <div class="l-box">
 
                 <h3>{{ artists.alias }}</h3>
                 <p>{{ artists.bio }}</p>
@@ -298,7 +283,7 @@
                   <i class="fa fa-soundcloud"></i>
                 </a>
 
- </div>
+ </div></div>
                 {% endfor %}
              
             </div>
