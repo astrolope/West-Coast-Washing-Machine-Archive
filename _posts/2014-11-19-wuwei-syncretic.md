@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fresh Laundry: Wu Wei - Syncretic
+title: "Fresh Laundry: Wu Wei - Syncretic"
 author: garrett_criss
 name: 'Garrett Criss'
 category: releases
