@@ -2,30 +2,36 @@
   soundcloud: jellyfyst
   alias: "Jellyfyst"
   bio: "Covered in Lobsters"
+  image: ""
 
 - name: Garrett Criss
   soundcloud: lycrabeats
   alias: "LYCRA.beats"
   bio: "Garrett Criss Stretch Funk"
+  image:
 
 - name: Max McIndoe
   soundcloud: "user8578177"
   alias: "Macks.well"
   bio: "Yee"
+  image:
 
 - name: Chris Morris
   soundcloud: kreesto
   alias: "Kreesto"
   bio: "Kreesto beetso"
+  image:
 
 - name: Cameron Sherman
   soundcloud: starkravingrad
   alias: "Stark Raving Rad"
   bio: "er mah gerd Sterk raving rerd"
+  image:
 
 - name: Riley McGowen
   soundcloud: blapsta
   alias: "Blapsta"
   bio: "Young Holla"
+  image:
 
 
