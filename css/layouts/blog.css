@@ -289,10 +289,12 @@ ul.contact li a:hover
     }
 }
 
-.pager li {
-    padding: 3px;
-}
+
 
 .previous {
     padding: 3px;
+}
+
+.next {
+    padding: 3px;   
 }
