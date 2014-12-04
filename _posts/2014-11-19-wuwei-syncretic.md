@@ -12,7 +12,7 @@ Wu Wei's new release on Muti Music titled "Syncretic" fuses a delightful element
 >Wu Wei, a name derived from the Taoist path of non-action, has tapped into a universal song and brought its melodies into the physical realm. The result is a uniquely unifying effect, transcending language and cultural identity to remind the rest of humanity of their fundamental unity. The 21-year-old Los Angeles to Humboldt County transplant has spent his recent years perfecting his attenuation to the rhythms of the natural world creating intentional music to bring the planet together. He strives to combine the soul reaching sounds of ambient IDM together with the earthy bass of futuristic world hip-hop. He adds in a mix of orchestral instruments with the liberating sounds of nature to bring his music home and to keep in synch with the soul of the world. His production skills are only part of this terrestrial-magician’s slew of crowd charming concoctions. His DJ prowess creates connection to the dancers and alignment to the commonality of movement. -- Tooesday Behr
 
 ###Syncretic on Bandcamp
-<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3098748664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://mutimusic.bandcamp.com/album/syncretic">Syncretic by Wu Wei</a></iframe>
+<iframe style="border: 0; width: 200px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3098748664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://mutimusic.bandcamp.com/album/syncretic">Syncretic by Wu Wei</a></iframe>
 
 Opening track "Syncretic" on Bandcamp.
 
