@@ -114,6 +114,7 @@
   <div class="tab-pane fade in active" id="home">
 
                 <div class="posts">
+                    <div class="card">
                     <header class="post-header">
                         <img class="post-avatar" alt="{{ page.name }}&#x27;s avatar" height="48" width="48" src="http://westcoastwashingmachine.com/img/common/{{ page.author }}-avatar.png">
 
@@ -174,12 +175,13 @@
 
 
                 </div>
+                    </div>
 
 
   </div>
 
   <div class="tab-pane fade" id="Recent">
-      <br>
+      <div class="card">
     <h3>Related Posts</h3>
       <ul>
           {% for post in site.posts limit:10 %}
@@ -190,10 +192,11 @@
 
       </ul>
 
-
+</div>
   </div>
 
 <div class="tab-pane fade" id="events">
+    <div class="card">
 <h3>Releases</h3>
   <ul>
           {% for post in site.categories.releases limit:5 %}
@@ -215,7 +218,7 @@
       </ul>
 </div>
 
-
+</div>
             </div>
 
 
