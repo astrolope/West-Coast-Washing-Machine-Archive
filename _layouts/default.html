@@ -202,6 +202,8 @@
               {% for post in site.categories.featuredmix limit:5 %}
               <!-- A single blog post -->
               <section class="post">
+                  <div class="card">
+                  
                 <header class="post-header">
 
 
@@ -218,6 +220,7 @@
                   <a href="{{ post.url }}">More...</a>
                   <hr>
                 </div>
+                      </div>
               </section>
               {% endfor %}
             </div>
@@ -238,6 +241,7 @@
             
           
             <div class="tab-pane fade" id="events">
+                <div class="card">
               <div id="upto-calendar-container-VJMOKO" style="background-color: #333;" class="upto-calendar-plugin">
                 <script>
                   ! function(c, b, a) {
@@ -266,11 +270,13 @@
                 </script>
               </div>
             </div>
+            </div>
 
             <div class="tab-pane fade" id="artists">
               <br>{% for artists in site.data.artists %}
-              <div class="pure-u-1-2 pure-u-lg-1-2">
+              <div class="pure-u-1-2 pure-u-md-1-2">
                 <div class="l-box">
+                    <div class="card">
 
                 <h3>{{ artists.alias }}</h3>
                 <p>{{ artists.bio }}</p>
@@ -279,7 +285,7 @@
                   <i class="fa fa-soundcloud"></i>
                 </a>
 
- </div></div>
+ </div></div></div>
                 {% endfor %}
              
             </div>
