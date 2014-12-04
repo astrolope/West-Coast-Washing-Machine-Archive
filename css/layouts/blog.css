@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #efefef;   
+}
+
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);
@@ -79,6 +83,16 @@ h2 {
 .brand-tagline {
     font-weight: 300;
     color: rgb(176, 202, 219);
+}
+
+.card {
+    background-color: #fff;
+    padding-bottom: 10px;
+    border: 1px #eee;
+    border-radius: 6px;
+    -webkit-box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
+    -moz-box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
+    box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
 }
 
 /* Stylise the Social media buttons in the sidebar */
