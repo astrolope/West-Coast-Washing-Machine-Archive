@@ -162,33 +162,25 @@
                   
                  {% endfor %}
 
-                  <div class="pagination">
-                    <ul class="pager">
-                      {% if paginator.previous_page %}
-                      <li class="previous">
-                        <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Newer</a>
-                      </li>
+                  
+                    
+                    <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                        {% if paginator.previous_page %}
+                        <a href="/page{{ paginator.previous_page }}" class="btn btn-link " role="button">Left</a>
                         {% else %}
-                        <span class="previous">
-                          <li class="previous disabled">
-                            <a href="#">&larr; Newer</a>
-                          </li>
-                        </span>
-                        
-                        {% endif %} {% if paginator.next_page %}
-                        <li class="next">
-                          <a href="/page{{ paginator.next_page }}" class="next">Older &rarr;</a>
-                        </li>
-                        {% else %}
-                        <span class="next ">Older</span>
+                        <span><a href="#" class="btn btn-link disabled " role="button">Left</a></span>
                         {% endif %}
-                      {% for post in paginator.posts %}
-                        <li class="next">
-                           <a href="{{ post.url }}#disqus_thread">Comments</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
+                        
+                        {% for post in paginator.posts %}
+                        <a href="{{ post.url }}#disqus_thread" class="btn btn-link " role="button">Comments</a>
+                        {% endfor %}
+                        
+                        {% if paginator.next_page %}
+                        <a href="/page{{ paginator.next_page }}" class="btn btn-link" role="button">Right</a>
+                        {% else %}
+                        <span><a href="#" class="btn btn-link disabled" role="button">Right</a></span>
+                        {% endif %}
+                    </div>
                 </div>
                 
                           
