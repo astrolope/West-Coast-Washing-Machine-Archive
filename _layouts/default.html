@@ -168,7 +168,7 @@
                         {% if paginator.previous_page %}
                         <a href="/page{{ paginator.previous_page }}" class="btn btn-link " role="button">Left</a>
                         {% else %}
-                        <span><a href="#" class="btn btn-link disabled " role="button">Left</a></span>
+                        <span><a href="#" class="btn btn-link" role="button">Left</a></span>
                         {% endif %}
                         
                         {% for post in paginator.posts %}
@@ -178,7 +178,7 @@
                         {% if paginator.next_page %}
                         <a href="/page{{ paginator.next_page }}" class="btn btn-link" role="button">Right</a>
                         {% else %}
-                        <span><a href="#" class="btn btn-link disabled" role="button">Right</a></span>
+                        <span><a href="#" class="btn btn-link" role="button">Right</a></span>
                         {% endif %}
                     </div>
                         </div>
