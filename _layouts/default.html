@@ -166,9 +166,9 @@
                     <div class="pure-u-1">
                     <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
                         {% if paginator.previous_page %}
-                        <a href="/page{{ paginator.previous_page }}" class="btn btn-default " role="button">Left</a>
+                        <a href="/page{{ paginator.previous_page }}" class="btn btn-default " role="button"><i class="fa fa-arrow-left"></i> Newer </a>
                         {% else %}
-                       <a href="#" class="btn btn-default disabled" role="button">Left</a>
+                       <a href="#" class="btn btn-default disabled" role="button"><i class="fa fa-arrow-left"></i> Newer</a>
                         {% endif %}
                         
                         {% for post in paginator.posts %}
@@ -176,9 +176,9 @@
                         {% endfor %}
                         
                         {% if paginator.next_page %}
-                        <a href="/page{{ paginator.next_page }}" class="btn btn-default" role="button">Right</a>
+                        <a href="/page{{ paginator.next_page }}" class="btn btn-default" role="button">Older <i class="fa fa-arrow-right"></i></a>
                         {% else %}
-                        <a href="#" class="btn btn-deafult disabled" role="button">Right</a>
+                        <a href="#" class="btn btn-deafult disabled" role="button">Older <i class="fa fa-arrow-right"></i></a>
                         {% endif %}
                     </div>
                         </div>
