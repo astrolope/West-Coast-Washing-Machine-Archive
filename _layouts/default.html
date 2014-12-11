@@ -150,7 +150,7 @@
                      <h3 class="caption__overlay__title information-head-1">{{ post.title }}</h3>
                      
                       <p class="post-meta">
-                    By
+                   
                     <a class="post-author" href="#">{{ post.name }}</a> under
                     <a class="post-category post-category-{{ post.category }}" href="#">{{ post.category }}</a>
                          </p>
@@ -161,59 +161,17 @@
                      </div>
                      </article>
                      
-                    {{post.content}}
+                    { {post.content }}
+                         
                     <a href="{{post.url}}" class="btn">Read more</a>
                          
-                   {% endfor %}
+                  
                      </div>
                     
                      </div>
                      </div>
                   
-                  
-                  <!--<div class="card">
-                <header class="post-header">
-               
-
-                  <h2 class="post-title">{{ post.title }}</h2>
-
-                  <p class="post-meta">
-                    By
-                    <a class="post-author" href="#">{{ post.name }}</a> under
-                    <a class="post-category post-category-{{ post.category }}" href="#">{{ post.category }}</a>
-                    <a class="post-category post-category-events" href="{{ post.url }}#disqus_thread">Comments</a>
-                  </p>
-                </header>
-                  <hr>
-
-                <div class="post-description">
-                  <p>
-                    {{ post.content }}
-                  </p>
-                  
-                 {% endfor %}
-
-                  
-                    <div class="pure-u-1">
-                    <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                        {% if paginator.previous_page %}
-                        <a href="/page{{ paginator.previous_page }}" class="btn btn-default " role="button"><i class="fa fa-arrow-left"></i> Newer </a>
-                        {% else %}
-                       <a href="#" class="btn btn-default disabled" role="button"><i class="fa fa-arrow-left"></i> Newer</a>
-                        {% endif %}
-                        
-                        {% for post in paginator.posts %}
-                        <a href="{{ post.url }}#disqus_thread" class="btn btn-default " role="button">Comments</a>
-                        {% endfor %}
-                        
-                        {% if paginator.next_page %}
-                        <a href="/page{{ paginator.next_page }}" class="btn btn-default" role="button">Older <i class="fa fa-arrow-right"></i></a>
-                        {% else %}
-                        <a href="#" class="btn btn-deafult disabled" role="button">Older <i class="fa fa-arrow-right"></i></a>
-                        {% endif %}
-                    </div>
-                        </div>
-                </div>-->
+                   {% endfor %}
                 
             </div>
 
