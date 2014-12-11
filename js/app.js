@@ -80,10 +80,13 @@ function getSearchJSON()
    var hide = function() {
      $("#header").hide(); 
    }
+   
 
     $(document).ready(function() {
         // Create the search index on page load
         getSearchJSON();
+        
+   $('body').bind('touchstart', function() {});
         
 
         // Continually update search results as characters are typed
