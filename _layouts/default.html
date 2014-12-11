@@ -138,9 +138,9 @@
           <div class="tab-content">
             <div class="tab-pane fade in active" id="home">
 
-              {% for post in paginator.posts limit: 4%}
+             
               <div class="posts">
-                
+                 {% for post in paginator.posts limit:4 %}
                    <div class="pure-u-1 pure-u-md-1-2"> 
                      <div class="l-box">
                      <div class="card">
@@ -163,7 +163,7 @@
                      
                     {{post.content}}
                     <a href="{{post.url}}" class="btn">Read more</a>
-                            {% endfor %}
+                {% endfor %}
                      </div>
                     
                      </div>
