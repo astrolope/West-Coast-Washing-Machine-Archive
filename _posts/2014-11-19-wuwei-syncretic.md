@@ -4,6 +4,7 @@ title: "Fresh Laundry: Wu Wei - Syncretic"
 author: garrett_criss
 name: 'Garrett Criss'
 category: releases
+image: 'wewei.jpg'
 ---
 
 Wu Wei's new release on Muti Music titled "Syncretic" fuses a delightful element of tribal landscapes with the misty mountains of northern California. Laid atop variable downtempo beats this release creates a wonderful soundtrack to this rainy day and our next edition of Fresh Laundry with Wu Wei.

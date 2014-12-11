@@ -4,6 +4,7 @@ title: "Fresh Laundry: PEGA5U5 - The flock"
 author: garrett_criss
 name: 'Garrett Criss'
 category: releases
+image: "theflock.jpg"
 ---
 After seeing Mr. Rogers perform at CCF festival this year I was in absolute excitement to hear what his next release would hold. After a wait of many months his new project PEGA5U5 releaased an album called "The Flock" featuring an array of my favorite tracks from his set. 
 

@@ -4,6 +4,7 @@ title: "Fresh Laundry: Bogtrotter - Jamais Vu"
 author: blapsta
 name: "Riley McGowen"
 category: releases
+image: "bogtrotter.jpg"
 ---
 Coming from Minnesota, Bogtrotter, holding it down from multiple angles. Naming his EP 'Jamais Vu'. 
 

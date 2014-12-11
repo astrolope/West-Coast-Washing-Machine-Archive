@@ -109,7 +109,7 @@
           <ul class="nav nav-tabs nav-justified" role="tablist">
             <li class="active">
                 
-              <a href="#home" role="tab" data-toggle="tab">Posts</a>
+              <a href="#home" role="tab" data-toggle="tab">Blog</a>
     
             </li>
             <li>
@@ -138,11 +138,41 @@
           <div class="tab-content">
             <div class="tab-pane fade in active" id="home">
 
-              {% for post in paginator.posts %}
+              {% for post in paginator.posts limit: 4%}
               <div class="posts">
-                  <div class="card">
+                
+                   <div class="pure-u-1 pure-u-md-1-2"> 
+                     <div class="l-box">
+                     <div class="card">
+                     <article class="caption">
+                     <img class="caption__media card-img" src="http://westcoastwashingmachine.com/img/{{post.image}}" />
+                     <div class="caption__overlay">
+                     <h3 class="caption__overlay__title information-head-1">{{ post.title }}</h3>
+                     
+                      <p class="post-meta">
+                    By
+                    <a class="post-author" href="#">{{ post.name }}</a> under
+                    <a class="post-category post-category-{{ post.category }}" href="#">{{ post.category }}</a>
+                         </p>
+                     
+                     <div><span><i class="fa fa-comment"></i></span><a href="{{post.url}}#disqus_thread">Read more...</a></div>
+                    
+                     
+                     </div>
+                     </article>
+                     
+                    {{post.content}}
+                    <a href="{{post.url}}" class="btn">Read more</a>
+                            {% endfor %}
+                     </div>
+                    
+                     </div>
+                     </div>
+                  
+                  
+                  <!--<div class="card">
                 <header class="post-header">
-                  <img class="post-avatar" alt="{{ post.name }}&#x27;s avatar" height="48" width="48" src="http://westcoastwashingmachine.com/img/common/{{ post.author }}-avatar.png">
+               
 
                   <h2 class="post-title">{{ post.title }}</h2>
 
@@ -182,14 +212,14 @@
                         {% endif %}
                     </div>
                         </div>
+                </div>-->
+                
+            </div>
+
                 </div>
                 
-                          
-
-              </div>
-
-                </div>
-            </div>
+                
+           
             
             <div class="tab-pane fade" id="mix">
               {% for post in site.categories.featuredmix limit:5 %}
