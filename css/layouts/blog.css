@@ -88,12 +88,16 @@ h2 {
 .card {
     background-color: #fff;
     
-    padding: 5px;
+  
     border: 1px #eee;
     border-radius: 6px;
     -webkit-box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
     -moz-box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
     box-shadow: -5px 7px 46px -10px rgba(0,0,0,0.58);
+}
+
+.card > p,h3,a {
+    padding: 7px;   
 }
 
 /* Stylise the Social media buttons in the sidebar */
