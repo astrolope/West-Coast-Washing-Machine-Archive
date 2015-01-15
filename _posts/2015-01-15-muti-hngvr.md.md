@@ -4,6 +4,7 @@ title: "Fresh Lanudry: HNGVR"
 author: garrett_criss
 name: 'Garrett Criss'
 category: releases
+image: 'hngvr.jpg'
 ---
 
 HNGVR pronounced Hangover is a young producer coming out of Italy with a big sound. Fans of Jungle, Drum and Bass, and Downtempo styles will all be tickled by the track selection on HNGVR's newest release on Muti Music "The Hangover EP".
