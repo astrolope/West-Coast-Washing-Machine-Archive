@@ -345,7 +345,9 @@ ul.contact li a:hover
 
     left: 0;
 
-    padding: 10px;
+    padding: 5px;
+  
+    padding-top: 15px;
 
     color: white;
 
@@ -402,6 +404,10 @@ ul.contact li a:hover
 
     transform: translateY(0);
 
+}
+
+.center {
+    text-align: center; 
 }
 
 /* enable absolute positioning */
