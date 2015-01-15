@@ -142,7 +142,8 @@
                           
                     <div class="author pure-u-1">
                        <img class="post-avatar" alt="{{ page.name }}&#x27;s avatar" height="48" width="48" src="http://westcoastwashingmachine.com/img/common/{{ page.author }}-avatar.png">
-                    <h4 class="information-head">About the Author</h4>      
+                    <h4 class="information-head center">About the Author</h4>
+                      <p class="post-meta">Yeah dog</p>
                           
 
                     </div>
@@ -286,7 +287,16 @@
             </div>
         </div>
      <!-- BACK TO TOP CONTENT BOX -->
-   <a href="#" class="back-to-top"> <i class="fa fa-chevron-up fa-3x"></i> </a>
+   <a href="#" class="back-to-top pure-u-6-24">
+    <h3 class="information-head">Next</h3>
+     <h6 class="information-head">
+         {% for post in site.categories.releases limit:1 %}
+          
+              {{ post.title }}
+          
+          {% endfor %}   
+     </h6>
+   </a>
     </div>
     
     

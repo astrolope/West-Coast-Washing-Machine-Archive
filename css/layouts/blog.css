@@ -465,7 +465,7 @@ ul.contact li a:hover
 
 .author {
   padding: 5px;
-  background-color: #efefef;
+ 
   
 }
 
@@ -475,4 +475,8 @@ ul.contact li a:hover
 
 .addthis_sharing_toolbox {
   padding: 7px;
+}
+
+.post-author {
+  color: white;
 }
