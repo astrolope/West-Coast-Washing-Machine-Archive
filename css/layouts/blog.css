@@ -337,7 +337,7 @@ ul.contact li a:hover
 
     position: absolute;
 
-    top: 0;
+    top: 20px;
 
     right: 0;
 
@@ -347,7 +347,7 @@ ul.contact li a:hover
 
     padding: 5px;
   
-    padding-top: -15px;
+    
 
     color: white;
 
