@@ -287,19 +287,20 @@
 
             </div>
         </div>
+  {% for post in paginator.posts limit:1 | plus:1 %}
      <!-- BACK TO TOP CONTENT BOX -->
-   <a href="#" class="back-to-top pure-u-6-24">
+   <a href="{{ paginator.next_page_path }}" class="back-to-top pure-u-6-24">
     <h3 class="information-head">Next</h3>
      <h6 class="information-head">
-         {% for post in site.categories.releases limit:1 | plus:1 %}
+         
           
-              {{ page.title }}
+              {{ post.title }}
           
-          {% endfor %}   
+            
      </h6>
    </a>
     </div>
-    
+    {% endfor %} 
     
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
