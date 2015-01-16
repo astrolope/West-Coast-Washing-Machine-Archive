@@ -118,7 +118,7 @@
                         <div class="l-box">
                     <header class="post-header">
                        
-                        <h2 class="post-title">{{ page.title }}</h2>
+                        <h1 class="post-title center">{{ page.title }}</h1>
 
                         <p class="post-meta">
                             By <a class="post-author1" href="#">{{ page.name }}</a> under <a class="post-category post-category-{{ page.category }}" href="#">{{ page.category }}</a>
@@ -287,20 +287,20 @@
 
             </div>
         </div>
-  {% for post in site.posts limit:1 %}
+ 
      <!-- BACK TO TOP CONTENT BOX -->
    <a href="{{ paginator.next_page_path }}" class="back-to-top pure-u-6-24">
     <h3 class="information-head">Next</h3>
      <h6 class="information-head">
          
-          
+           {% for post in site.posts limit:1 %}
               {{ post.title }}
           
-            
+            {% endfor %} 
      </h6>
    </a>
     </div>
-    {% endfor %} 
+    
     
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
