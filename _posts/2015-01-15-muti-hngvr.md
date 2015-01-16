@@ -10,7 +10,10 @@ image: 'hngvr.jpg'
 HNGVR pronounced Hangover is a young producer coming out of Italy with a big sound. Fans of Jungle, Drum and Bass, and Downtempo styles will all be tickled by the track selection on HNGVR's newest release on Muti Music "The Hangover EP".
 
 ###HNGVR - Wonderful Days
-<iframe width="400" height="315" src="//www.youtube.com/embed/ZwkG_vMnrIc" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ZwkG_vMnrIc"></iframe>
+</div>
+
 
 With soft padding and elegant voicing the track wonderful days teases you in with curious cinematics and a soft track to back it all up. 
 

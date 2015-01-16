@@ -100,7 +100,7 @@ function getSearchJSON()
       
     //SCROLL TO TOP FUNCTION
     //Show scroll to top when passes offset variable. 
-    var offset = 300;
+    var offset = 650;
     var duration = 350;
   
   
