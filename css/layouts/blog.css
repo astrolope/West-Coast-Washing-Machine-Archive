@@ -484,3 +484,14 @@ ul.contact li a:hover
 .post-author1 {
  
 }
+
+.breadcrumb {
+  border-color: none;
+  font-size: 12px;
+}
+
+.crumb {
+  font-size: 8px;
+  padding: 0;
+  margin-top: -10px
+}
