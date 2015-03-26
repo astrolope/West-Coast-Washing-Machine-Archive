@@ -4,7 +4,7 @@ layout: post
 author: garrett_criss
 name: Garrett Criss
 category: releases
-image: hngvr.jpg
+image: null
 ---
 
 ## A New Post
