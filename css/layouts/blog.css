@@ -220,8 +220,8 @@ ul.contact li a:hover
 }
 .post-avatar {
     border-radius: 50px;
-    float: left;
-    margin-left: 1em;
+   
+  
     padding: 5px;
 }
 .post-description {
@@ -473,8 +473,8 @@ ul.contact li a:hover
   align-content: center;
 }
 
-.addthis_sharing_toolbox {
-  padding: 7px;
+.addthis_sharing_toolbox a {
+  padding: 10px;
 }
 
 .post-author {
