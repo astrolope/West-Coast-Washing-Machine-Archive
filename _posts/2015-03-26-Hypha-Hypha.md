@@ -1,5 +1,10 @@
 ---
-published: false
+published: true
+layout: post
+author: garrett_criss
+name: Garrett Criss
+category: releases
+image: hngvr.jpg
 ---
 
 ## A New Post
