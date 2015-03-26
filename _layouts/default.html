@@ -66,20 +66,7 @@
 
   <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
-      <div class="collapse navbar-collapse pure-u-1" id="bs-example-navbar-collapse-1">
-        <div class="nav navbar-nav navbar-form dropdown">
-            <div class="inner-addon left-addon">
-          <!-- Search text box -->
-          <i class="fa fa-search"></i>
-          <input id="search_input" data-toggle="dropdown" type="text" class="form-control" placeholder="Search" autofocus="autofocus" autocomplete="off" onkeyup="checkTextField();" />
-            </div>
-          <!-- Search results styled as a dropdown menu -->
-          <ul id="search_results" class="dropdown-menu" role="menu">
-          </ul>
-        </div>
 
-      </div>
-      <!-- /.navbar-collapse -->
       <div class="header">
 
 
@@ -126,12 +113,26 @@
             </li>
             <li>
 
-              <a href="#artists" role="tab" data-toggle="tab">Artists</a>
+              <a href="#artists" role="tab" data-toggle="tab">Archive</a>
 
             </li>
           </ul>
           
-                   
+              
+                            <div class=" navbar pure-u-1" id="bs-example-navbar-collapse-1">
+        <div class="nav navbar-nav navbar-form dropdown">
+            <div class="inner-addon left-addon">
+          <!-- Search text box -->
+          <i class="fa fa-search"></i>
+          <input id="search_input" data-toggle="dropdown" type="text" class="form-control" placeholder="Explore..." autofocus="autofocus" autocomplete="off" onkeyup="checkTextField();" />
+            </div>
+          <!-- Search results styled as a dropdown menu -->
+          <ul id="search_results" class="dropdown-menu" role="menu">
+          </ul>
+        </div>
+
+      </div>
+      <!-- /.navbar-collapse -->     
 
 
           <!-- Tab panes -->
@@ -260,21 +261,25 @@
             </div>
 
             <div class="tab-pane fade" id="artists">
-              {% for artists in site.data.artists %}
-              <div class="pure-u-1 pure-u-md-7-24">
-                <div class="l-box">
-                    <div class="card">
+              <div class=" card pure-u-1">
 
-                <h3>{{ artists.alias }}</h3>
-                <p>{{ artists.bio }}</p>
-
-                <a href="https://soundcloud.com/{{ artists.soundcloud }}">
-                  <i class="fa fa-soundcloud"></i>
-                </a>
-
- </div></div></div>
-                {% endfor %}
-             
+<h3>This year's posts</h3>
+  {%for post in site.posts %}
+    {% unless post.next %}
+      <ul class="this">
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        </ul>
+        <h3>{{ post.date | date: '%Y' }}</h3>
+        <ul class="past">
+      {% endif %}
+    {% endunless %}
+      <li><time>{{ post.date | date:"%d %b" }}</time> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+              </div>         
             </div>
             
             </div> <!-- end tab content -->
