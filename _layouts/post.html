@@ -133,11 +133,13 @@
 
                     </div>
                           
+                          <center class="pure-u-1"><div class="addthis_sharing_toolbox"></div></center>
+                          
                           <!-- Look the author details up from the site config. -->
 {% assign author = site.data.authors[page.author] %}
                           {% if author %}
                           
-                    <div class="author pure-u-1 center">
+                    <div class="author pure-u-1 center well">
                        
                     <h4 class="information-head center">About the Author</h4>
                      <center><img class="post-avatar center" alt="{{ page.name }}&#x27;s avatar" height="100" width="100" src="http://westcoastwashingmachine.com/img/common/{{ page.author }}-avatar.png"></center> 
@@ -149,7 +151,7 @@
     {% endif %}
 
                                         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<center class="pure-u-1"><div class="addthis_sharing_toolbox"></div></center>
+
                   
                    <div id="disqus_thread"></div>
 
