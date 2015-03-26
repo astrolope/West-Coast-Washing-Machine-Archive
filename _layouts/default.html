@@ -144,7 +144,13 @@
                    <div class="pure-u-1">
                      <div class="l-box">
                      <div class="card">
+                       {% if post.image == null %}
+                       
+                       {% else %}
                      <article class="caption">
+                       
+                       
+                       
                      <img class="caption__media card-img" src="http://westcoastwashingmachine.com/img/{{post.image}}" />
                      <div class="caption__overlay">
                      <h3 class="caption__overlay__title information-head-1">{{ post.title }}</h3>
@@ -160,7 +166,7 @@
                      
                      </div>
                      </article>
-                       
+                       {% endif %}
                     <h3 class="information-head-1">{{ post.title }}</h3>
                     {{ post.excerpt }}
                          
@@ -291,57 +297,46 @@ s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
 
 
 
-            <div class="footer">
-<br>
-
-             
-              
-              
-              <div class="pure-u-1">
-                <div class="l-box center">
-                  <h3>Contact</h3>
-                  <h6>submissions@westcoastwashingmachine.com</h6>
-                  
-                  
-              <div class="pure-menu pure-menu-horizontal pure-menu-open ">
-                <ul class="contact">
-                  <li>
-                    <a href="https://soundcloud.com/wcwm" class="fa fa-soundcloud fa-1x">
-                      <span>Soundcloud</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://westcoastwashingmachine.bandcamp.com" class="fa fa-music fa-1x">
-                      <span>Bandcamp</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/WC_WM" class="fa fa-twitter fa-1x">
-                      <span>Twitter</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/westcoastwashingmachine" class="fa fa-facebook fa-1x">
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://instagram.com/westcoastwashingmachine" class="fa fa-camera-retro fa-1x">
-                      <span>Instagram</span>
-                    </a>
-                  </li>
-                </ul>
-
-              </div>
-                
-                </div>
-              </div>
-
+            <div class="footer center">
               
           
-
-
-
+             <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                      <li><a href="">About</a></li>
+                        <li><a href="http://westcoastwashingmachine.com/public/sitemap.xml">Sitemap</a></li>
+                        <li><a href="http://westcoastwashingmachine.com/public/atom.xml">RSS</a></li>
+                    </ul>
+                </div>
+              
+              <div class="pure-menu pure-menu-horizontal pure-menu-open ">
+                    <ul class=" contact">
+      <li>
+            <a href="https://soundcloud.com/wcwm" class="fa fa-soundcloud fa-1x">
+                <span>Soundcloud</span>
+            </a>
+      </li>
+      <li>
+            <a href="http://westcoastwashingmachine.bandcamp.com" class="fa fa-music fa-1x">
+                <span>Bandcamp</span>
+            </a>
+      </li>
+      <li>
+            <a href="https://twitter.com/WC_WM" class="fa fa-twitter fa-1x">
+                <span>Twitter</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://facebook.com/westcoastwashingmachine" class="fa fa-facebook fa-1x">
+                <span>Facebook</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://instagram.com/westcoastwashingmachine" class="fa fa-camera-retro fa-1x">
+                <span>Instagram</span>
+            </a>
+        </li>
+  </ul>
+                </div>
 
 
             </div>
