@@ -20,7 +20,7 @@ April 1st, Bumble came out with a new release on [Additech.com](http://www.addic
 
 Raw stuff.
 
-<img src="http://s3.amazonaws.com/assets.musicwindow.com/public/album_images_500/A182504_Tsunamis_Symbiota.jpg">
+<img class="pure-img-responsive" src="http://s3.amazonaws.com/assets.musicwindow.com/public/album_images_500/A182504_Tsunamis_Symbiota.jpg">
 
 ### Favorite Track
 Of course everyone has their favorite song in an EP or album right?
