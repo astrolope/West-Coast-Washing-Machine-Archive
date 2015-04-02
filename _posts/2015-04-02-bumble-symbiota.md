@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbiota
-author: riley
+author: riley_mcgowen
 name: Riley McGowen
 category: releases
 published: true
