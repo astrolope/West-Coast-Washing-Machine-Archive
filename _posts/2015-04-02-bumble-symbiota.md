@@ -7,8 +7,6 @@ category: releases
 published: true
 ---
 
-
-
 "The solo project of bumble is a hive of vibrations set into the air by an infatuation of audio play. 
 Weaving sonically diverse, bass wobbling, funk centered, glitchy creations. 
 The unifying theme of his music reflect nature, experience, perception and aspires to spark connection."
