@@ -1,10 +1,11 @@
 ---
-published: false
+published: true
 layout: post
 author: garrett_criss
 name: Garrett Criss
 category: hamper
 ---
+
 
 ## Ian Ewing
 
@@ -14,4 +15,3 @@ Ian Ewing’s music is a combination of lush, crisp sounds with a little hint of
 
 ## Links
 [Ian Ewing's Soundcloud](https://soundcloud.com/ian-ewing7)
-
